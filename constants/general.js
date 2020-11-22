@@ -1,12 +1,39 @@
-call s:h("Comment", { "fg": s:comment_grey, "gui": "italic", "cterm": "italic" }) // any comment
-call s:h("Constant", { "fg": s:cyan }) // any constant
-call s:h("String", { "fg": s:green }) // a string constant: "this is a string"
-call s:h("Character", { "fg": s:green }) // a character constant: 'c', '\n'
-call s:h("Number", { "fg": s:dark_yellow }) // a number constant: 234, 0xff
-call s:h("Boolean", { "fg": s:red }) // a boolean constant: TRUE, false
-call s:h("Float", { "fg": s:dark_yellow }) // a floating point constant: 2.3e10
-call s:h("Identifier", { "fg": s:red }) // any variable name
-call s:h("Function", { "fg": s:blue }) // function name (also: methods for classes)
+const GREY_FOUR = [
+  "Comment", // Any comment
+]
+
+const CYAN = [
+  "Constant", // Any constant
+  "Character", // Any character constant, things like '\n'
+
+]
+
+const GREEN = [
+  "String", // Any string
+]
+
+const YELLOW = [
+  "Number" // Any number
+]
+
+const RED = [
+  "Boolean", // Boolean values, TRUE/FALSE
+  "Identifier", // Any variable name
+]
+
+const DARK_YELLOW = [
+  "Float", // Any floating point number
+]
+
+
+const BLUE = [
+  "Function", // Any function name as well as methods for classes
+]
+
+const PURPLE = [
+  "Statement", // Any statement, TODO: an example
+]
+
 call s:h("Statement", { "fg": s:purple }) // any statement
 call s:h("Conditional", { "fg": s:purple }) // if, then, else, endif, switch, etc.
 call s:h("Repeat", { "fg": s:purple }) // for, do, while, etc.
@@ -83,4 +110,3 @@ call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) // Visual mode
 call s:h("VisualNOS", { "bg": s:visual_grey }) // Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 call s:h("WarningMsg", { "fg": s:yellow }) // warning messages
 call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) // current match in 'wildmenu' completion
-
