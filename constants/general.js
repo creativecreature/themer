@@ -1,5 +1,12 @@
 const GREY_FOUR = [
   "Comment", // Any comment
+  "ColorColumn", // used for the columns set with 'colorcolumn'
+  "SpecialComment", // special things inside a comment
+  "ColorColumn-BG", // used for the columns set with 'colorcolumn'
+  "CursorColumn-BG", // the screen column that the cursor is in when 'cursorcolumn' is set
+  "CursorLine-BG", // the screen line that the cursor is in when 'cursorline' is set
+  "LineNr", // Line number for ":number// and ":#// commands, and when 'number' or 'relativenumber' option is set.
+"NonText", // '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">// displayed when a double-wide character doesn't fit at the end of the line).
 ]
 
 const CYAN = [
@@ -13,26 +20,39 @@ const GREEN = [
   "String", // Any string
 ]
 
+const BLACK = [
+  "VertSplit", // The column separating vertically split windows
+]
+
 const YELLOW = [
   "Number", // Any number
   "PreProc", // Generic preprocessor
   "PreCondit", // Preprocessor #if, #else, #endif, etc.
   "Type", // Int, long, char, etc.
+  "StorageClass", // Static, register, volatile, etc.
+  "Structure", // Struct, union, enum, etc.
+  "Typedef", // A typedef
 ]
 
 const RED = [
   "Boolean", // Boolean values, TRUE/FALSE
   "Identifier", // Any variable name
   "Keyword", // Any other keyword
+  "Error", // any erroneous construct
+  "ErrorMsg", // error messages on the command line
 ]
 
 const DARK_YELLOW = [
   "Float", // Any floating point number
+
 ]
 
 const BLUE = [
   "Function", // Any function name as well as methods for classes
-  "Include", // preprocessor #include
+  "Include", // Preprocessor #include
+  "Special", // Any special symbol
+  "Directory", // directory names (and other special names in listings)
+  "MatchParen", // The character under the cursor or just before it, if it is a paired bracket, and its match.
 ]
 
 const PURPLE = [
@@ -43,50 +63,25 @@ const PURPLE = [
   "Exception", // Try, catch throw
   "Define", // Preprocessor #define
   "Macro", // Same as Define
+  "Todo", // anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 ]
 
-call s:h("StorageClass", { "fg": s:yellow }) // static, register, volatile, etc.
-call s:h("Structure", { "fg": s:yellow }) // struct, union, enum, etc.
-call s:h("Typedef", { "fg": s:yellow }) // A typedef
-call s:h("Special", { "fg": s:blue }) // any special symbol
-call s:h("SpecialChar", {}) // special character in a constant
-call s:h("Tag", {}) // you can use CTRL-] on this
-call s:h("Delimiter", {}) // character that needs attention
-call s:h("SpecialComment", { "fg": s:comment_grey }) // special things inside a comment
-call s:h("Debug", {}) // debugging statements
-call s:h("Underlined", { "gui": "underline", "cterm": "underline" }) // text that stands out, HTML links
-call s:h("Ignore", {}) // left blank, hidden
-call s:h("Error", { "fg": s:red }) // any erroneous construct
-call s:h("Todo", { "fg": s:purple }) // anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+// Value of these should be: call s:h("X", {})
+const NONE = [
+"SpecialChar", // special character in a constant
+"Tag", // you can use CTRL-] on this
+"Delimiter", // character that needs attention
+"Debug", // debugging statements
+  "Ignore", // left blank, hidden
+  "Conceal", // placeholder characters substituted for concealed text (see 'conceallevel')
+  "CursorIM", // like Cursor, but used when in IME mode
+  "FoldColumn", // 'foldcolumn'
+  "SignColumn", // column where signs are displayed
+  "CursorLineNr", // Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+  "ModeMsg", // 'showmode' message (e.g., "-- INSERT --")
+  "MoreMsg", // more-prompt
+]
 
-" }}}
-
-// Highlighting Groups (descriptions and ordering from `:h hitest.vim`) {{{
-
-call s:h("ColorColumn", { "bg": s:cursor_grey }) // used for the columns set with 'colorcolumn'
-call s:h("Conceal", {}) // placeholder characters substituted for concealed text (see 'conceallevel')
-call s:h("Cursor", { "fg": s:black, "bg": s:blue }) // the character under the cursor
-call s:h("CursorIM", {}) // like Cursor, but used when in IME mode
-call s:h("CursorColumn", { "bg": s:cursor_grey }) // the screen column that the cursor is in when 'cursorcolumn' is set
-call s:h("CursorLine", { "bg": s:cursor_grey }) // the screen line that the cursor is in when 'cursorline' is set
-call s:h("Directory", { "fg": s:blue }) // directory names (and other special names in listings)
-call s:h("DiffAdd", { "bg": s:green, "fg": s:black }) // diff mode: Added line
-call s:h("DiffChange", { "bg": s:yellow, "fg": s:black }) // diff mode: Changed line
-call s:h("DiffDelete", { "bg": s:red, "fg": s:black }) // diff mode: Deleted line
-call s:h("DiffText", { "bg": s:black, "fg": s:yellow }) // diff mode: Changed text within a changed line
-call s:h("ErrorMsg", { "fg": s:red }) // error messages on the command line
-call s:h("VertSplit", { "fg": s:black }) // the column separating vertically split windows
-call s:h("Folded", { "bg": s:cursor_grey, "fg": s:comment_grey }) // line used for closed folds
-call s:h("FoldColumn", {}) " 'foldcolumn'
-call s:h("SignColumn", {}) // column where signs are displayed
-call s:h("IncSearch", { "fg": s:yellow, "bg": s:comment_grey }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
-call s:h("LineNr", { "fg": s:gutter_fg_grey }) // Line number for ":number// and ":#// commands, and when 'number' or 'relativenumber' option is set.
-call s:h("CursorLineNr", {}) // Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-call s:h("MatchParen", { "fg": s:blue, "gui": "underline" }) // The character under the cursor or just before it, if it is a paired bracket, and its match.
-call s:h("ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
-call s:h("MoreMsg", {}) // more-prompt
-call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">// displayed when a double-wide character doesn't fit at the end of the line).
-call s:h("Normal", { "fg": s:white, "bg": s:black }) // normal text
 call s:h("Pmenu", { "bg": s:menu_grey }) // Popup menu: normal item.
 call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) // Popup menu: selected item.
 call s:h("PmenuSbar", { "bg": s:special_grey }) // Popup menu: scrollbar.
@@ -107,4 +102,15 @@ call s:h("Title", { "fg": s:green }) // titles for output from ":set all", ":aut
 call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) // Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) // Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 call s:h("WarningMsg", { "fg": s:yellow }) // warning messages
+
+
+
 call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) // current match in 'wildmenu' completion
+call s:h("Cursor", { "fg": s:black, "bg": s:blue }) // the character under the cursor
+call s:h("DiffAdd", { "bg": s:green, "fg": s:black }) // diff mode: Added line
+call s:h("DiffChange", { "bg": s:yellow, "fg": s:black }) // diff mode: Changed line
+call s:h("DiffDelete", { "bg": s:red, "fg": s:black }) // diff mode: Deleted line
+call s:h("DiffText", { "bg": s:black, "fg": s:yellow }) // diff mode: Changed text within a changed line
+call s:h("Folded", { "bg": s:cursor_grey, "fg": s:comment_grey }) // line used for closed folds
+call s:h("IncSearch", { "fg": s:yellow, "bg": s:comment_grey }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
+call s:h("Normal", { "fg": s:white, "bg": s:black }) // normal text
