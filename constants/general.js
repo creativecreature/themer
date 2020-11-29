@@ -1,116 +1,84 @@
-const GREY_FOUR = [
-  "Comment", // Any comment
-  "ColorColumn", // used for the columns set with 'colorcolumn'
-  "SpecialComment", // special things inside a comment
-  "ColorColumn-BG", // used for the columns set with 'colorcolumn'
-  "CursorColumn-BG", // the screen column that the cursor is in when 'cursorcolumn' is set
-  "CursorLine-BG", // the screen line that the cursor is in when 'cursorline' is set
-  "LineNr", // Line number for ":number// and ":#// commands, and when 'number' or 'relativenumber' option is set.
-"NonText", // '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">// displayed when a double-wide character doesn't fit at the end of the line).
-]
+// Syntax Groups (descriptions and ordering from `:h w18`)
+const Comment        = { foreground: COLORS.COMMENT_GRAY } // any comment
+const Constant       = { foreground: COLORS.CYAN } // any constant
+const String         = { foreground: COLORS.GREEN } // a string constant: "this is a string"
+const Character      = { foreground: COLORS.GREEN } // a character constant: 'c', '\n'
+const Number         = { foreground: COLORS.DARK_YELLOW } // a number constant: 234, 0xff
+const Boolean        = { foreground: COLORS.RED } // a boolean constant: TRUE, false
+const Float          = { foreground: COLORS.DARK_YELLOW } // a floating point constant: 2.3e10
+const Identifier     = { foreground: COLORS.RED } // any variable name
+const Function       = { foreground: COLORS.BLUE } // function name (also: methods for classes)
+const Statement      = { foreground: COLORS.PURPLE } // any statement
+const Conditional    = { foreground: COLORS.PURPLE } // if, then, else, endif, switch, etc.
+const Repeat         = { foreground: COLORS.PURPLE } // for, do, while, etc.
+const Label          = { foreground: COLORS.PURPLE } // case, default, etc.
+const Operator       = { foreground: COLORS.CYAN } // sizeof", "+", "*", etc.
+const Keyword        = { foreground: COLORS.RED } // any other keyword
+const Exception      = { foreground: COLORS.PURPLE } // try, catch, throw
+const PreProc        = { foreground: COLORS.YELLOW } // generic Preprocessor
+const Include        = { foreground: COLORS.BLUE } // preprocessor #include
+const Define         = { foreground: COLORS.PURPLE } // preprocessor #define
+const Macro          = { foreground: COLORS.PURPLE } // same as Define
+const PreCondit      = { foreground: COLORS.YELLOW } // preprocessor #if, #else, #endif, etc.
+const Type           = { foreground: COLORS.YELLOW } // int, long, char, etc.
+const StorageClass   = { foreground: COLORS.YELLOW } // static, register, volatile, etc.
+const Structure      = { foreground: COLORS.YELLOW } // struct, union, enum, etc.
+const Typedef        = { foreground: COLORS.YELLOW } // A typedef
+const Special        = { foreground: COLORS.BLUE } // any special symbol
+const SpecialChar    = {} // special character in a constant
+const Tag            = {} // you can use CTRL-] on this
+const Delimiter      = {} // character that needs attention
+const SpecialComment = { foreground: COLORS.COMMENT_GRAY } // special things inside a comment
+const Debug          = {} // debugging statements
+const Underlined     = { gui: 'underline', cterm: 'underline' } // text that stands out, HTML links
+const Ignore         = {} // left blank, hidden
+const Error          = { foreground: COLORS.RED } // any erroneous construct
+const Todo           = { foreground: COLORS.PURPLE } // anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-const CYAN = [
-  "Constant", // Any constant
-  "Character", // Any character constant, things like '\n'
-  "Operator", // sizeof", "+", "*", etc.
-  "Operator", // sizeof", "+", "*", etc.
-]
+// Highlighting Groups (descriptions and ordering from `:h hitest.vim`)
 
-const GREEN = [
-  "String", // Any string
-]
-
-const BLACK = [
-  "VertSplit", // The column separating vertically split windows
-]
-
-const YELLOW = [
-  "Number", // Any number
-  "PreProc", // Generic preprocessor
-  "PreCondit", // Preprocessor #if, #else, #endif, etc.
-  "Type", // Int, long, char, etc.
-  "StorageClass", // Static, register, volatile, etc.
-  "Structure", // Struct, union, enum, etc.
-  "Typedef", // A typedef
-]
-
-const RED = [
-  "Boolean", // Boolean values, TRUE/FALSE
-  "Identifier", // Any variable name
-  "Keyword", // Any other keyword
-  "Error", // any erroneous construct
-  "ErrorMsg", // error messages on the command line
-]
-
-const DARK_YELLOW = [
-  "Float", // Any floating point number
-
-]
-
-const BLUE = [
-  "Function", // Any function name as well as methods for classes
-  "Include", // Preprocessor #include
-  "Special", // Any special symbol
-  "Directory", // directory names (and other special names in listings)
-  "MatchParen", // The character under the cursor or just before it, if it is a paired bracket, and its match.
-]
-
-const PURPLE = [
-  "Statement", // Any statement, TODO: an example
-  "Conditional", // If, then, else, endif, switch, etc.
-  "Repeat", // For, do, while, etc.
-  "Label", // Case, default, etc.
-  "Exception", // Try, catch throw
-  "Define", // Preprocessor #define
-  "Macro", // Same as Define
-  "Todo", // anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-]
-
-// Value of these should be: call s:h("X", {})
-const NONE = [
-"SpecialChar", // special character in a constant
-"Tag", // you can use CTRL-] on this
-"Delimiter", // character that needs attention
-"Debug", // debugging statements
-  "Ignore", // left blank, hidden
-  "Conceal", // placeholder characters substituted for concealed text (see 'conceallevel')
-  "CursorIM", // like Cursor, but used when in IME mode
-  "FoldColumn", // 'foldcolumn'
-  "SignColumn", // column where signs are displayed
-  "CursorLineNr", // Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-  "ModeMsg", // 'showmode' message (e.g., "-- INSERT --")
-  "MoreMsg", // more-prompt
-]
-
-call s:h("Pmenu", { "bg": s:menu_grey }) // Popup menu: normal item.
-call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) // Popup menu: selected item.
-call s:h("PmenuSbar", { "bg": s:special_grey }) // Popup menu: scrollbar.
-call s:h("PmenuThumb", { "bg": s:white }) // Popup menu: Thumb of the scrollbar.
-call s:h("Question", { "fg": s:purple }) // hit-enter prompt and yes/no questions
-call s:h("Search", { "fg": s:light, "bg": s:purple }) // Last search pattern highlighting (see 'hlsearch'). Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
-call s:h("SpecialKey", { "fg": s:special_grey }) // Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
-call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) // Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
-call s:h("SpellCap", { "fg": s:dark_yellow }) // Word that should start with a capital. This will be combined with the highlighting used otherwise.
-call s:h("SpellLocal", { "fg": s:dark_yellow }) // Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
-call s:h("SpellRare", { "fg": s:dark_yellow }) // Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
-call s:h("StatusLine", { "fg": s:white, "bg": s:cursor_grey }) // status line of current window
-call s:h("StatusLineNC", { "fg": s:comment_grey }) // status lines of not-current windows Note: if this is equal to "StatusLine// Vim will use "^^^// in the status line of the current window.
-call s:h("TabLine", { "fg": s:comment_grey }) // tab pages line, not active tab page label
-call s:h("TabLineFill", {}) // tab pages line, where there are no labels
-call s:h("TabLineSel", { "fg": s:white }) // tab pages line, active tab page label
-call s:h("Title", { "fg": s:green }) // titles for output from ":set all", ":autocmd// etc.
-call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) // Visual mode selection
-call s:h("VisualNOS", { "bg": s:visual_grey }) // Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
-call s:h("WarningMsg", { "fg": s:yellow }) // warning messages
-
-
-
-call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) // current match in 'wildmenu' completion
-call s:h("Cursor", { "fg": s:black, "bg": s:blue }) // the character under the cursor
-call s:h("DiffAdd", { "bg": s:green, "fg": s:black }) // diff mode: Added line
-call s:h("DiffChange", { "bg": s:yellow, "fg": s:black }) // diff mode: Changed line
-call s:h("DiffDelete", { "bg": s:red, "fg": s:black }) // diff mode: Deleted line
-call s:h("DiffText", { "bg": s:black, "fg": s:yellow }) // diff mode: Changed text within a changed line
-call s:h("Folded", { "bg": s:cursor_grey, "fg": s:comment_grey }) // line used for closed folds
-call s:h("IncSearch", { "fg": s:yellow, "bg": s:comment_grey }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
-call s:h("Normal", { "fg": s:white, "bg": s:black }) // normal text
+const ColorColumn    = { background: COLORS.CURSOR_GRAY } // used for the columns set with 'colorcolumn'
+const Conceal        = {} // placeholder characters substituted for concealed text (see 'conceallevel')
+const Cursor         = { foreground: COLORS.BLACK, background: COLORS.BLUE } // the character under the cursor
+const CursorIM       = {} // like Cursor, but used when in IME mode
+const CursorColumn   = { background: COLORS.CURSOR_GRAY } // the screen column that the cursor is in when 'cursorcolumn' is set
+const CursorLine     = { background: COLORS.CURSOR_GRAY } // the screen line that the cursor is in when 'cursorline' is set
+const Directory      = { foreground: COLORS.BLUE } // directory names (and other special names in listings)
+const DiffAdd        = { background: COLORS.GREEN, foreground: COLORS.BLACK } // diff mode: Added line
+const DiffChange     = { background: COLORS.YELLOW, foreground: COLORS.BLACK } // diff mode: Changed line
+const DiffDelete     = { background: COLORS.RED, foreground: COLORS.BLACK } // diff mode: Deleted line
+const DiffText       = { background: COLORS.BLACK, foreground: COLORS.YELLOW } // diff mode: Changed text within a changed line
+const ErrorMsg       = { foreground: COLORS.RED } // error messages on the command line
+const VertSplit      = { foreground: COLORS.BLACK } // the column separating vertically split windows
+const Folded         = { background: COLORS.CURSOR_GRAY, foreground: COLORS.COMMENT_GRAY } // line used for closed folds
+const FoldColumn     = {} // 'foldcolumn'
+const SignColumn     = {} // column where signs are displayed
+const IncSearch      = { foreground: COLORS.YELLOW, background: COLORS.COMMENT_GRAY } // 'incsearch' highlighting; also used for the text replaced with ":s///c"
+const LineNr         = { foreground: COLORS.GUTTER_FG_GRAY } // Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+const CursorLineNr   = {} // Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+const MatchParen     = { foreground: COLORS.BLUE, gui: 'underline' } // The character under the cursor or just before it, if it is a paired bracket, and its match.
+const ModeMsg        = {} // 'showmode' message (e.g., "-- INSERT --")
+const MoreMsg        = {} // more-prompt
+const NonText        = { foreground: COLORS.SPECIAL_GRAY } // '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
+const Normal         = { foreground: COLORS.WHITE, background: COLORS.BLACK } // normal text
+const Pmenu          = { background: COLORS.MENU_GRAY } // Popup menu: normal item.
+const PmenuSel       = { foreground: COLORS.BLACK, background: COLORS.BLUE } // Popup menu: selected item.
+const PmenuSbar      = { background: COLORS.SPECIAL_GRAY } // Popup menu: scrollbar.
+const PmenuThumb     = { background: COLORS.WHITE } // Popup menu: Thumb of the scrollbar.
+const Question       = { foreground: COLORS.PURPLE } // hit-enter prompt and yes/no questions
+const Search         = { foreground: COLORS.LIGHT, background: COLORS.PURPLE } // Last search pattern highlighting (see 'hlsearch'). Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
+const SpecialKey     = { foreground: COLORS.SPECIAL_GRAY } // Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
+const SpellBad       = { foreground: COLORS.RED, gui: 'underline', cterm: 'underline' } // Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
+const SpellCap       = { foreground: COLORS.DARK_YELLOW } // Word that should start with a capital. This will be combined with the highlighting used otherwise.
+const SpellLocal     = { foreground: COLORS.DARK_YELLOW } // Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
+const SpellRare      = { foreground: COLORS.DARK_YELLOW } // Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
+const StatusLine     = { foreground: COLORS.WHITE, background: COLORS.CURSOR_GRAY } // status line of current window
+const StatusLineNC   = { foreground: COLORS.COMMENT_GRAY } // status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+const TabLine        = { foreground: COLORS.COMMENT_GRAY } // tab pages line, not active tab page label
+const TabLineFill    = {} // tab pages line, where there are no labels
+const TabLineSel     = { foreground: COLORS.WHITE } // tab pages line, active tab page label
+const Title          = { foreground: COLORS.GREEN } // titles for output from ":set all", ":autocmd" etc.
+const Visual         = { foreground: COLORS.VISUAL_BLACK, background: COLORS.VISUAL_GRAY } // Visual mode selection
+const VisualNOS      = { background: COLORS.VISUAL_GRAY } // Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
+const WarningMsg     = { foreground: COLORS.YELLOW } // warning messages
+const WildMenu       = { foreground: COLORS.BLACK, background: COLORS.BLUE } // current match in 'wildmenu' completion
