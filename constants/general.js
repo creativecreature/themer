@@ -5,7 +5,8 @@ const GREY_FOUR = [
 const CYAN = [
   "Constant", // Any constant
   "Character", // Any character constant, things like '\n'
-
+  "Operator", // sizeof", "+", "*", etc.
+  "Operator", // sizeof", "+", "*", etc.
 ]
 
 const GREEN = [
@@ -13,40 +14,37 @@ const GREEN = [
 ]
 
 const YELLOW = [
-  "Number" // Any number
+  "Number", // Any number
+  "PreProc", // Generic preprocessor
+  "PreCondit", // Preprocessor #if, #else, #endif, etc.
+  "Type", // Int, long, char, etc.
 ]
 
 const RED = [
   "Boolean", // Boolean values, TRUE/FALSE
   "Identifier", // Any variable name
+  "Keyword", // Any other keyword
 ]
 
 const DARK_YELLOW = [
   "Float", // Any floating point number
 ]
 
-
 const BLUE = [
   "Function", // Any function name as well as methods for classes
+  "Include", // preprocessor #include
 ]
 
 const PURPLE = [
   "Statement", // Any statement, TODO: an example
+  "Conditional", // If, then, else, endif, switch, etc.
+  "Repeat", // For, do, while, etc.
+  "Label", // Case, default, etc.
+  "Exception", // Try, catch throw
+  "Define", // Preprocessor #define
+  "Macro", // Same as Define
 ]
 
-call s:h("Statement", { "fg": s:purple }) // any statement
-call s:h("Conditional", { "fg": s:purple }) // if, then, else, endif, switch, etc.
-call s:h("Repeat", { "fg": s:purple }) // for, do, while, etc.
-call s:h("Label", { "fg": s:purple }) // case, default, etc.
-call s:h("Operator", { "fg": s:cyan }) // sizeof", "+", "*", etc.
-call s:h("Keyword", { "fg": s:red }) // any other keyword
-call s:h("Exception", { "fg": s:purple }) // try, catch, throw
-call s:h("PreProc", { "fg": s:yellow }) // generic Preprocessor
-call s:h("Include", { "fg": s:blue }) // preprocessor #include
-call s:h("Define", { "fg": s:purple }) // preprocessor #define
-call s:h("Macro", { "fg": s:purple }) // same as Define
-call s:h("PreCondit", { "fg": s:yellow }) // preprocessor #if, #else, #endif, etc.
-call s:h("Type", { "fg": s:yellow }) // int, long, char, etc.
 call s:h("StorageClass", { "fg": s:yellow }) // static, register, volatile, etc.
 call s:h("Structure", { "fg": s:yellow }) // struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) // A typedef
