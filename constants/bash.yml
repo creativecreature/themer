@@ -1,0 +1,8 @@
+shSet:
+  foreground: 'white'
+shSetOption:
+  foreground: 'white'
+shStatement:
+  foreground: 'white'
+shFunctionKey:
+  foreground: 'white'

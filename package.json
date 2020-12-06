@@ -1,0 +1,23 @@
+{
+  "name": "zeilo",
+  "version": "1.0.0",
+  "description": "vim-theme renderer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesConner/zeilo.git"
+  },
+  "author": "Charles Victor Conner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesConner/zeilo/issues"
+  },
+  "homepage": "https://github.com/CharlesConner/zeilo#readme",
+  "dependencies": {
+    "hsl-to-hex": "^1.0.0",
+    "yaml": "^1.10.0"
+  }
+}
