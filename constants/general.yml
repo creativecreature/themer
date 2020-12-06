@@ -112,10 +112,10 @@ Cursor:
   description: 'The character under the cursor'
 Visual:
   foreground: 'bgNine'
-  background: 'grayOne'
+  background: 'greyOne'
   description: 'Visual mode selection'
 VisualNOS:
-  background: 'grayOne'
+  background: 'greyOne'
   description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
 MatchParen:
   foreground: 'blue'
