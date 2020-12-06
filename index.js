@@ -4,20 +4,22 @@ const hslToHex = require('hsl-to-hex')
 
 // == CONSTANTS ================================================================
 const COLORS = yaml.parse(fs.readFileSync('./constants/colors.yml', 'utf-8'))
-const KEYS_TO_REMOVE = ['description']
-const CAPTURE_NUMBER = /([0-9]+)%?, ?([0-9]+)%?, ?([0-9]+)/g
+const COLOR_KEYS = ['foreground', 'background']
+const HSL_REGEX = /([0-9]+)%?, ?([0-9]+)%?, ?([0-9]+)/g
+const NEW_LINE = '\n';
+const TAB = '\t'
 
 // == TEMPLATES ================================================================
 const generalTemplate = yaml.parse(fs.readFileSync('./constants/general.yml', 'utf-8'))
 const bashTemplate = yaml.parse(fs.readFileSync('./constants/bash.yml', 'utf-8'))
 
 // == HELPERS ==================================================================
-const cleanKeys = obj =>
+const extractColorKeys = obj =>
   Object.keys(obj).reduce(
     (acc, cur) => ({
       ...acc,
       [cur]: Object.keys(obj[cur])
-        .filter(k => !KEYS_TO_REMOVE.includes(k))
+        .filter(k => COLOR_KEYS.includes(k))
         .reduce((a, c) => ({ ...a, [c]: obj[cur][c] }), {}),
     }),
     {},
@@ -39,12 +41,12 @@ const convertToHex = obj =>
       [cur]: Object.keys(obj[cur]).reduce(
         (a, c) => ({
           ...a,
-          [c]: hslToHex(
-            ...[...obj[cur][c].matchAll(CAPTURE_NUMBER)]
+          [c]: obj[cur][c] ? hslToHex(
+            ...[...obj[cur][c].matchAll(HSL_REGEX)]
               .flat()
               .slice(1, 4)
               .map(s => parseInt(s)),
-          ),
+          ) : '',
         }),
         {},
       ),
@@ -52,7 +54,22 @@ const convertToHex = obj =>
     {},
   )
 
-const withoutFields = cleanKeys(bashTemplate)
-const withColors = getColor(withoutFields)
-const withHex = convertToHex(withColors)
-console.log(withHex)
+const pipe = fns => x => fns.reduce((x, f) => f(x), x)
+
+const fromTemplate = pipe([extractColorKeys, getColor, convertToHex])
+
+
+const general = fromTemplate(generalTemplate)
+const bash = fromTemplate(bashTemplate)
+
+const header = `
+" ===============================================================
+" Zeilo
+" A vim color theme
+" URL: TODO
+" Author: Charles Victor Conner
+" ===============================================================
+`
+const renderString = `${header}`
+
+fs.writeFileSync('colors.vim', renderString)
