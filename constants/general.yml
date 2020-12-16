@@ -12,7 +12,7 @@ Operator:
   foreground: 'cyan'
   description: 'Sizeof", "+", "*", etc.'
 String:
-  foreground: 'green'
+  foreground: 'lime'
   description: 'A string constant: "this is a string"'
 Character:
   foreground: 'green'

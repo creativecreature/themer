@@ -17,7 +17,7 @@ hi SpecialComment guifg=#585f8d guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#585f8d guibg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#24c1ff guibg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#24c1ff guibg=NONE gui=NONE cterm=NONE
-hi String guifg=#40b57c guibg=NONE gui=NONE cterm=NONE
+hi String guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi Character guifg=#40b57c guibg=NONE gui=NONE cterm=NONE
 hi PreCondit guifg=#ffcd42 guibg=NONE gui=NONE cterm=NONE
 hi Type guifg=#ffcd42 guibg=NONE gui=NONE cterm=NONE
@@ -94,7 +94,7 @@ hi DiffChange guifg=#1b1e37 guibg=#ffcd42 gui=NONE cterm=NONE
 hi DiffText guifg=#ffcd42 guibg=#1b1e37 gui=NONE cterm=NONE
 
 "" BASH
-hi shSet guifg=#24c1ff guibg=NONE gui=NONE cterm=NONE
-hi shSetOption guifg=#ebedfa guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#24c1ff guibg=NONE gui=NONE cterm=NONE
+hi shSet guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
+hi shSetOption guifg=#dc7756 guibg=NONE gui=NONE cterm=NONE
+hi shStatement guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi shFunctionKey guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
