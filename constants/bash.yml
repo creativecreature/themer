@@ -1,8 +1,8 @@
 shSet:
-  foreground: 'pink'
-shSetOption:
   foreground: 'orange'
+shSetOption:
+  foreground: 'cyan'
 shStatement:
-  foreground: 'purpleLight'
+  foreground: 'pink'
 shFunctionKey:
   foreground: 'purpleLight'

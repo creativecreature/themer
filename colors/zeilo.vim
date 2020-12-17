@@ -32,7 +32,7 @@ hi Error guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#dc7756 guibg=NONE gui=NONE cterm=NONE
 hi Todo guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi Repeat guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi Label guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
@@ -40,8 +40,8 @@ hi Define guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi Exception guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
 hi Include guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
-hi Special guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
-hi Function guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
+hi Special guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
+hi Function guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 hi SpecialChar guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Tag guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Delimiter guifg=NONE guibg=NONE gui=NONE cterm=NONE
@@ -94,7 +94,7 @@ hi DiffChange guifg=#1b1e37 guibg=#ffcd42 gui=NONE cterm=NONE
 hi DiffText guifg=#ffcd42 guibg=#1b1e37 gui=NONE cterm=NONE
 
 "" BASH
-hi shSet guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
-hi shSetOption guifg=#dc7756 guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
+hi shSet guifg=#dc7756 guibg=NONE gui=NONE cterm=NONE
+hi shSetOption guifg=#24c1ff guibg=NONE gui=NONE cterm=NONE
+hi shStatement guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 hi shFunctionKey guifg=#6975c3 guibg=NONE gui=NONE cterm=NONE
