@@ -57,7 +57,7 @@ Statement:
   foreground: 'purpleLight'
   description: 'Any statement'
 Conditional:
-  foreground: 'purpleLight'
+  foreground: 'orange'
   description: 'If, then, else, endif, switch, etc.'
 Todo:
   foreground: 'purpleLight'
@@ -81,10 +81,10 @@ Include:
   foreground: 'blue'
   description: 'Preprocessor #include'
 Special:
-  foreground: 'blue'
+  foreground: 'pink'
   description: 'Any special symbol'
 Function:
-  foreground: 'blue'
+  foreground: 'pink'
   description: 'Function name (also: methods for classes)'
 SpecialChar:
   description: 'Special character in a constant'
