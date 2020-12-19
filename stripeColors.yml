@@ -1,0 +1,11 @@
+vimBackground: 'hsl(211, 63%, 18%)'
+purple: 'hsl(230, 100%, 75%)'
+cyan: 'hsl(190, 100%, 50%)'
+orange: 'hsl(29, 100%, 67%)'
+yellow: 'hsl(45, 100%, 71%)' # Used for insert mode background
+darkBlue: 'hsl(212, 76%, 10%)' # Used as text color on top of the NORNAL mode box which is purple, also for INSERT mode box
+darkerBlue: 'hsl(210, 73%, 15%)' # Used for the status bar in vim
+darkestBlue: 'hsl(212, 76%, 10%)' # Used for the terminal, used as
+wildMenuBg: 'hsl(208, 62%, 25%)'
+wildMenuHighlight: 'hsl(209, 55%, 33%)'
+statusbarTextColor: 'hsl(210, 25%, 44%)' # Could also be used for comments
