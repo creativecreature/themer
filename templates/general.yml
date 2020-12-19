@@ -51,7 +51,7 @@ Boolean:
   foreground: 'red'
   description: 'A boolean constant: TRUE, false'
 Identifier:
-  foreground: 'red'
+  foreground: 'purple'
   description: 'Any variable name'
 Statement:
   foreground: 'purple'
@@ -104,7 +104,7 @@ Ignore:
 # Highlighting Groups (:h hitest.vim)
 Normal:
   foreground: 'textOne'
-  background: 'bgThree'
+  background: 'bgTwo'
   description: 'Normal text'
 Cursor:
   foreground: 'bgThree'
@@ -134,7 +134,7 @@ LineNr:
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 StatusLine:
   foreground: 'textOne'
-  background: 'bgThree'
+  background: 'bgTwo'
   description: 'Status line of current window'
 StatusLineNC:
   foreground: 'textDarkOne'
