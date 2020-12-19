@@ -30,7 +30,7 @@ hi Float guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi Keyword guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi Error guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi Identifier guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
+hi Identifier guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi Conditional guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi Todo guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
@@ -48,7 +48,7 @@ hi Delimiter guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Debug guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
 hi Ignore guifg=NONE guibg=NONE gui=NONE cterm=NONE
-hi Normal guifg=#eaf2fa guibg=#06182d gui=NONE cterm=NONE
+hi Normal guifg=#eaf2fa guibg=#0a2642 gui=NONE cterm=NONE
 hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Visual guifg=#06182d guibg=#eaf2fa gui=NONE cterm=NONE
 hi VisualNOS guifg=NONE guibg=#eaf2fa gui=NONE cterm=NONE
@@ -56,7 +56,7 @@ hi MatchParen guifg=#4d7cff guibg=NONE gui=underline cterm=NONE
 hi Search guifg=#c690e9 guibg=#8095ff gui=NONE cterm=NONE
 hi IncSearch guifg=#ffda6b guibg=#54708c gui=NONE cterm=NONE
 hi LineNr guifg=#54708c guibg=NONE gui=NONE cterm=NONE
-hi StatusLine guifg=#eaf2fa guibg=#06182d gui=NONE cterm=NONE
+hi StatusLine guifg=#eaf2fa guibg=#0a2642 gui=NONE cterm=NONE
 hi StatusLineNC guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#c690e9 gui=NONE cterm=NONE
