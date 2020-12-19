@@ -5,4 +5,4 @@ shSetOption:
 shStatement:
   foreground: 'pink'
 shFunctionKey:
-  foreground: 'purpleLight'
+  foreground: 'purple'

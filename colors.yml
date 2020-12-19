@@ -1,33 +1,26 @@
-# === BACKGROUND COLORS =======================================================
-bgOne: 'hsl(233, 35%, 30%)'
-bgTwo: 'hsl(233, 35%, 28%)'
-bgThree: 'hsl(233, 35%, 26%)'
-bgFour: 'hsl(233, 35%, 24%)'
-bgFive: 'hsl(233, 35%, 22%)'
-bgSix: 'hsl(233, 35%, 20%)'
-bgSeven: 'hsl(233, 35%, 18%)'
-bgEight: 'hsl(233, 35%, 16%)'
-bgNine: 'hsl(233, 35%, 14%)'
+# Primary background colors
+bgOne: 'hsl(211, 63%, 18%)'
+bgTwo: 'hsl(210, 73%, 15%)' # Used for the status bar in vim
+bgThree: 'hsl(212, 76%, 10%)' # Used as text color on top of the NORNAL mode box which is purple, also for INSERT mode box
 
-# === GREY COLORS =============================================================
-greyOne: 'hsl(233, 57%, 95%)'
-greyTwo: 'hsl(233, 53%, 90%)'
-greyThree: 'hsl(233, 50%, 88%)'
-greyFour: 'hsl(233, 44%, 77%)'
-greyFive: 'hsl(233, 39%, 74%)'
-greySix: 'hsl(233, 37%, 67%)'
-greySeven: 'hsl(233, 23%, 45%)'
-greyEight: 'hsl(233, 23%, 38%)'
-greyNine: 'hsl(233, 22%, 32%)'
+# Lighter background colors
+bgLightOne: 'hsl(208, 62%, 25%)'
+bgLightTwo: 'hsl(209, 55%, 33%)'
 
-# === GENERAL COLORS ==========================================================
-red: 'hsl(351, 64%, 57%)'
+# Primary text colors
+textOne: 'hsl(211, 63%, 95%)'
+textTwo: 'hsl(211, 63%, 92%)'
+textThree: 'hsl(211, 62%, 89%)'
+
+textDarkOne: 'hsl(210, 25%, 44%)' # Used for vim status bar text
+
+
+# General colors to draw attention
+purple: 'hsl(230, 100%, 75%)'
 pink: 'hsl(276, 67%, 74%)'
-purpleDark: 'hsl(258, 80%, 60%)'
-purpleLight: 'hsl(232, 43%, 59%)'
+cyan: 'hsl(190, 100%, 50%)'
+orange: 'hsl(29, 100%, 67%)'
+yellow: 'hsl(45, 100%, 71%)' # Used for insert mode background
+green: 'hsl(84, 80%, 63%)'
+red: 'hsl(351, 64%, 57%)'
 blue: 'hsl(224, 100%, 65%)'
-cyan: 'hsl(197, 100%, 57%)'
-green: 'hsl(151, 48%, 48%)'
-lime: 'hsl(84, 80%, 63%)'
-yellow: 'hsl(44, 100%, 63%)'
-orange: 'hsl(15, 66%, 60%)'

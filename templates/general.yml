@@ -1,9 +1,9 @@
 # Syntax Groups (:h w18)
 SpecialComment:
-  foreground: 'greySeven'
+  foreground: 'textDarkOne'
   description: 'Special things inside a comment'
 Comment:
-  foreground: 'greySeven'
+  foreground: 'textDarkOne'
   description: 'Any comment'
 Constant:
   foreground: 'cyan'
@@ -12,7 +12,7 @@ Operator:
   foreground: 'cyan'
   description: 'Sizeof", "+", "*", etc.'
 String:
-  foreground: 'lime'
+  foreground: 'green'
   description: 'A string constant: "this is a string"'
 Character:
   foreground: 'green'
@@ -36,10 +36,10 @@ PreProc:
   foreground: 'yellow'
   description: 'Generic Preprocessor'
 Number:
-  foreground: 'purpleDark'
+  foreground: 'purple'
   description: 'A number constant: 234, 0xff'
 Float:
-  foreground: 'purpleDark'
+  foreground: 'purple'
   description: 'A floating point constant: 2.3e10'
 Keyword:
   foreground: 'red'
@@ -54,28 +54,28 @@ Identifier:
   foreground: 'red'
   description: 'Any variable name'
 Statement:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Any statement'
 Conditional:
   foreground: 'orange'
   description: 'If, then, else, endif, switch, etc.'
 Todo:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Anything that needs extra attention; mostly the keywords TODO FIXME and XXX'
 Repeat:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'For, do, while, etc.'
 Label:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Case, default, etc.'
 Define:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Preprocessor #define'
 Macro:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Same as Define'
 Exception:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Try, catch, throw'
 Include:
   foreground: 'blue'
@@ -103,19 +103,19 @@ Ignore:
 
 # Highlighting Groups (:h hitest.vim)
 Normal:
-  foreground: 'greyOne'
-  background: 'bgEight'
+  foreground: 'textOne'
+  background: 'bgThree'
   description: 'Normal text'
 Cursor:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'blue'
   description: 'The character under the cursor'
 Visual:
-  foreground: 'bgNine'
-  background: 'greyOne'
+  foreground: 'bgThree'
+  background: 'textOne'
   description: 'Visual mode selection'
 VisualNOS:
-  background: 'greyOne'
+  background: 'textOne'
   description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
 MatchParen:
   foreground: 'blue'
@@ -123,61 +123,61 @@ MatchParen:
   description: 'The character under the cursor or just before it, if it is a paired bracket and its match'
 Search:
   foreground: 'pink'
-  background: 'purpleLight'
+  background: 'purple'
   description: 'Last search pattern highlighting. Also used for highlighting the current line in the quickfix window'
 IncSearch:
   foreground: 'yellow'
-  background: 'greySeven'
+  background: 'textDarkOne'
   description: 'IncSearch highlighting, also used for the text replaced with :s///c'
 LineNr:
-  foreground: 'greyFive'
+  foreground: 'textDarkOne'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 StatusLine:
-  foreground: 'greyOne'
-  background: 'bgNine'
+  foreground: 'textOne'
+  background: 'bgThree'
   description: 'Status line of current window'
 StatusLineNC:
-  foreground: 'greySeven'
+  foreground: 'textDarkOne'
   description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
 WildMenu:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'blue'
   description: 'Current match in wildmenu completion'
 Pmenu:
   background: 'pink'
   description: 'Popup menu, normal item'
 PmenuSbar:
-  background: 'greyTwo'
+  background: 'textTwo'
   description: 'Popup menu, scrollbar'
 PmenuThumb:
-  background: 'greyOne'
+  background: 'textOne'
   description: 'Popup menu, thumb of the scrollbar'
 PmenuSel:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'blue'
   description: 'Popup menu selected item'
 ColorColumn:
-  background: 'greyFour'
+  background: 'textThree'
   description: 'Used for the columns set with colorcolumn'
 CursorColumn:
-  background: 'greyFour'
+  background: 'textThree'
   description: 'The screen column that the cursor is in when cursorcolumn is set'
 VertSplit:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   description: 'The column separating vertically split windows'
 TabLine:
-  foreground: 'greySeven'
+  foreground: 'textDarkOne'
   description: 'Tab pages line, not active tab page label'
 TabLineSel:
-  foreground: 'greyOne'
+  foreground: 'textOne'
   description: 'Tab pages line, active tab page label'
 TabLineFill:
   description: 'Tab pages line, where there are no labels'
 SpecialKey:
-  foreground: 'greyTwo'
+  foreground: 'textTwo'
   description: 'Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, listchars. generally: text that is displayed differently from what it really is.'
 NonText:
-  foreground: 'greyTwo'
+  foreground: 'textTwo'
   description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 Title:
   foreground: 'green'
@@ -195,49 +195,49 @@ Directory:
   foreground: 'blue'
   description: 'Directory names (and other special names in listings)'
 Question:
-  foreground: 'purpleLight'
+  foreground: 'purple'
   description: 'Hit-enter prompt and yes/no questions'
 SpellRare:
-  foreground: 'purpleDark'
+  foreground: 'purple'
   description: 'word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.'
 SpellLocal:
-  foreground: 'purpleDark'
+  foreground: 'purple'
   description: 'word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.'
 SpellCap:
-  foreground: 'purpleDark'
+  foreground: 'purple'
   description: 'word that should start with a capital. This will be combined with the highlighting used otherwise.'
 Conceal:
   description: 'Placeholder characters substituted for concealed text'
 CustorIM:
   description: 'Like Cursor, but used when in IME mode'
 Folded:
-  foreground: 'greySeven'
-  background: 'greyFour'
+  foreground: 'textDarkOne'
+  background: 'textThree'
   description: 'Line used closed folds'
 Foldcolumn:
   description: 'Foldcolumn'
 SignColumn:
   description: 'Column where signs are displayed'
 CursorLine:
-  background: 'greyFour'
+  background: 'textThree'
   description: 'The screen lune that the cursor is in when cursorline is set'
 CursorLineNr:
   description: 'Like LineNr when cursorline or relativenumber is set for the cursor line'
 ModeMsg:
   description: 'Showmode message, e.g -- INSERT --'
 DiffAdd:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'green'
   description: 'Diff mode, added line'
 DiffDelete:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'red'
   description: 'Diff mode, deleted line'
 DiffChange:
-  foreground: 'bgEight'
+  foreground: 'bgThree'
   background: 'yellow'
   description: 'Diff mode, changed line'
 DiffText:
   foreground: 'yellow'
-  background: 'bgEight'
+  background: 'bgThree'
   description: 'Diff mode, changed text within a changed line'
