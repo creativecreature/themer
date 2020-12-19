@@ -3,7 +3,7 @@ const yaml = require('yaml')
 const hslToHex = require('hsl-to-hex')
 
 const DEFAULT_VALUES = { foreground: 'NONE', background: 'NONE', gui: 'NONE', cterm: 'NONE' }
-const COLOR_PATH = './constants/colors.yml'
+const COLOR_PATH = './colors.yml'
 const ENCODING = 'utf-8'
 const COLOR_KEYS = ['foreground', 'background']
 const HSL_PATTERN = /([0-9]+)%?, ?([0-9]+)%?, ?([0-9]+)/g
