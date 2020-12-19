@@ -23,7 +23,6 @@
     "yaml": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^7.15.0",
-    "nodemon": "^2.0.6"
+    "eslint": "^7.15.0"
   }
 }
