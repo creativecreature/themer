@@ -16,6 +16,7 @@ let g:colors_name="zeilo"
 hi Normal guifg=#eaf2fa guibg=#112d4b gui=NONE cterm=NONE
 hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
+hi String guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#c690e9 gui=NONE cterm=NONE
@@ -53,10 +54,8 @@ hi Search guifg=#eaf2fa guibg=#00d5ff gui=NONE cterm=NONE
 hi IncSearch guifg=#00d5ff guibg=#06182d gui=NONE cterm=NONE
 hi Question guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
 hi StatusLine guifg=#00d5ff guibg=#0a2642 gui=NONE cterm=NONE
-hi StatusLineNC guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Typedef guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
-hi String guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Number guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Float guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
@@ -82,6 +81,7 @@ hi SpecialKey guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi NonText guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi SpecialComment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
+hi StatusLineNC guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Conceal guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Tag guifg=NONE guibg=NONE gui=NONE cterm=NONE
