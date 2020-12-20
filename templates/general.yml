@@ -11,7 +11,7 @@ Underlined:
   gui: 'underline'
   cterm: 'underline'
   description: 'Text that stands out, HTML links'
-String: # TODO: I would like strings to be orange, but then I need to find a replacement
+String:
   foreground: 'green'
   description: 'A string constant: "this is a string"'
 
@@ -20,11 +20,11 @@ LineNr:
   foreground: 'textDarkOne'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 WildMenu:
-  foreground: 'bgThree'
+  foreground: 'bgLightTwo'
   background: 'blue'
   description: 'Current match in wildmenu completion'
 Pmenu:
-  background: 'pink'
+  background: 'bgLightOne'
   description: 'Popup menu, normal item'
 PmenuSbar:
   background: 'textTwo'
@@ -33,8 +33,8 @@ PmenuThumb:
   background: 'textOne'
   description: 'Popup menu, thumb of the scrollbar'
 PmenuSel:
-  foreground: 'bgThree'
-  background: 'blue'
+  foreground: 'textOne'
+  background: 'bgLightTwo'
   description: 'Popup menu selected item'
 ColorColumn:
   background: 'textThree'
@@ -43,16 +43,14 @@ CursorColumn:
   background: 'textThree'
   description: 'The screen column that the cursor is in when cursorcolumn is set'
 VertSplit:
-  foreground: 'bgThree'
+  foreground: 'bgOne'
   description: 'The column separating vertically split windows'
 TabLine:
-  foreground: 'textDarkOne'
+  foreground: 'textThree'
   description: 'Tab pages line, not active tab page label'
 TabLineSel:
   foreground: 'textOne'
   description: 'Tab pages line, active tab page label'
-TabLineFill:
-  description: 'Tab pages line, where there are no labels'
 Title:
   foreground: 'green'
   description: 'Titles for output from ":set all", ":autocmd" etc.'
@@ -232,9 +230,6 @@ Special:
 SpecialKey:
   foreground: 'green'
   description: 'Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, listchars. generally: text that is displayed differently from what it really is.'
-NonText:
-  foreground: 'green'
-  description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 
 # Trivial
 Comment:
@@ -246,6 +241,9 @@ SpecialComment:
 StatusLineNC:
   foreground: 'textDarkOne'
   description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
+NonText:
+  foreground: 'textDarkOne'
+  description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 
 # Disable any special highlighting
 Ignore:
@@ -268,3 +266,5 @@ ModeMsg:
   description: 'Showmode message, e.g -- INSERT --'
 SpecialChar:
   description: 'Special character in a constant'
+TabLineFill:
+  description: 'Tab pages line, where there are no labels'
