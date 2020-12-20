@@ -18,17 +18,16 @@ hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
 hi String guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#54708c guibg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
-hi Pmenu guifg=NONE guibg=#c690e9 gui=NONE cterm=NONE
+hi WildMenu guifg=#265682 guibg=#4d7cff gui=NONE cterm=NONE
+hi Pmenu guifg=NONE guibg=#184267 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#deeaf7 gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#eaf2fa gui=NONE cterm=NONE
-hi PmenuSel guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
+hi PmenuSel guifg=#eaf2fa guibg=#265682 gui=NONE cterm=NONE
 hi ColorColumn guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
-hi VertSplit guifg=#06182d guibg=NONE gui=NONE cterm=NONE
-hi TabLine guifg=#54708c guibg=NONE gui=NONE cterm=NONE
+hi VertSplit guifg=#112d4b guibg=NONE gui=NONE cterm=NONE
+hi TabLine guifg=#d2e2f4 guibg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#eaf2fa guibg=NONE gui=NONE cterm=NONE
-hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Title guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi Directory guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#54708c guibg=#d2e2f4 gui=NONE cterm=NONE
@@ -78,10 +77,10 @@ hi Macro guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Include guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Special guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi SpecialKey guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
-hi NonText guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi SpecialComment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi StatusLineNC guifg=#54708c guibg=NONE gui=NONE cterm=NONE
+hi NonText guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Conceal guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Tag guifg=NONE guibg=NONE gui=NONE cterm=NONE
@@ -92,9 +91,10 @@ hi Foldcolumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SpecialChar guifg=NONE guibg=NONE gui=NONE cterm=NONE
+hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 
 "" BASH
-hi shSet guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
+hi shSet guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi shSetOption guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
 hi shStatement guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
