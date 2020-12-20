@@ -11,6 +11,9 @@ Underlined:
   gui: 'underline'
   cterm: 'underline'
   description: 'Text that stands out, HTML links'
+String: # TODO: I would like strings to be orange, but then I need to find a replacement
+  foreground: 'green'
+  description: 'A string constant: "this is a string"'
 
 # UI
 LineNr:
@@ -148,9 +151,6 @@ Constant:
 Typedef:
   foreground: 'yellow'
   description: 'a typedef'
-String:
-  foreground: 'yellow'
-  description: 'A string constant: "this is a string"'
 Number:
   foreground: 'yellow'
   description: 'A number constant: 234, 0xff'
