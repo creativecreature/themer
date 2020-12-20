@@ -1,144 +1,21 @@
-# Syntax Groups (:h w18)
-SpecialComment:
-  foreground: 'textDarkOne'
-  description: 'Special things inside a comment'
-Comment:
-  foreground: 'textDarkOne'
-  description: 'Any comment'
-Constant:
-  foreground: 'cyan'
-  description: 'Any constant'
-Operator:
-  foreground: 'cyan'
-  description: 'Sizeof", "+", "*", etc.'
-String:
-  foreground: 'green'
-  description: 'A string constant: "this is a string"'
-Character:
-  foreground: 'green'
-  description: 'a character constant: c, \n, etc'
-PreCondit:
-  foreground: 'yellow'
-  description: 'Preprocessor #if, #else, #endif, etc.'
-Type:
-  foreground: 'yellow'
-  description: 'Int, long, char, etc.'
-StorageClass:
-  foreground: 'yellow'
-  description: 'Static, register, volatile, etc.'
-Structure:
-  foreground: 'yellow'
-  description: 'Struct, union, enum, etc.'
-Typedef:
-  foreground: 'yellow'
-  description: 'a typedef'
-PreProc:
-  foreground: 'yellow'
-  description: 'Generic Preprocessor'
-Number:
-  foreground: 'purple'
-  description: 'A number constant: 234, 0xff'
-Float:
-  foreground: 'purple'
-  description: 'A floating point constant: 2.3e10'
-Keyword:
-  foreground: 'red'
-  description: 'Any other keyword'
-Error:
-  foreground: 'red'
-  description: 'Any erroneous construct'
-Boolean:
-  foreground: 'red'
-  description: 'A boolean constant: TRUE, false'
-Identifier:
-  foreground: 'purple'
-  description: 'Any variable name'
-Statement:
-  foreground: 'purple'
-  description: 'Any statement'
-Conditional:
-  foreground: 'orange'
-  description: 'If, then, else, endif, switch, etc.'
-Todo:
-  foreground: 'purple'
-  description: 'Anything that needs extra attention; mostly the keywords TODO FIXME and XXX'
-Repeat:
-  foreground: 'purple'
-  description: 'For, do, while, etc.'
-Label:
-  foreground: 'purple'
-  description: 'Case, default, etc.'
-Define:
-  foreground: 'purple'
-  description: 'Preprocessor #define'
-Macro:
-  foreground: 'purple'
-  description: 'Same as Define'
-Exception:
-  foreground: 'purple'
-  description: 'Try, catch, throw'
-Include:
-  foreground: 'blue'
-  description: 'Preprocessor #include'
-Special:
-  foreground: 'pink'
-  description: 'Any special symbol'
-Function:
-  foreground: 'pink'
-  description: 'Function name (also: methods for classes)'
-SpecialChar:
-  description: 'Special character in a constant'
-Tag:
-  description: 'You can use CTRL-] on this'
-Delimiter:
-  description: 'Character that needs attention'
-Debug:
-  description: 'Debugging statements'
-Underlined:
-  gui: 'underline'
-  cterm: 'underline'
-  description: 'Text that stands out, HTML links'
-Ignore:
-  description: 'Left blank, hidden'
-
-# Highlighting Groups (:h hitest.vim)
+# General
 Normal:
   foreground: 'textOne'
-  background: 'bgTwo'
+  background: 'bgOne'
   description: 'Normal text'
 Cursor:
   foreground: 'bgThree'
   background: 'blue'
   description: 'The character under the cursor'
-Visual:
-  foreground: 'bgThree'
-  background: 'textOne'
-  description: 'Visual mode selection'
-VisualNOS:
-  background: 'textOne'
-  description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
-MatchParen:
-  foreground: 'blue'
+Underlined:
   gui: 'underline'
-  description: 'The character under the cursor or just before it, if it is a paired bracket and its match'
-Search:
-  foreground: 'pink'
-  background: 'purple'
-  description: 'Last search pattern highlighting. Also used for highlighting the current line in the quickfix window'
-IncSearch:
-  foreground: 'yellow'
-  background: 'textDarkOne'
-  description: 'IncSearch highlighting, also used for the text replaced with :s///c'
+  cterm: 'underline'
+  description: 'Text that stands out, HTML links'
+
+# UI
 LineNr:
   foreground: 'textDarkOne'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
-StatusLine:
-  foreground: 'textOne'
-  background: 'bgTwo'
-  description: 'Status line of current window'
-StatusLineNC:
-  foreground: 'textDarkOne'
-  description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
 WildMenu:
   foreground: 'bgThree'
   background: 'blue'
@@ -173,58 +50,44 @@ TabLineSel:
   description: 'Tab pages line, active tab page label'
 TabLineFill:
   description: 'Tab pages line, where there are no labels'
-SpecialKey:
-  foreground: 'textTwo'
-  description: 'Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, listchars. generally: text that is displayed differently from what it really is.'
-NonText:
-  foreground: 'textTwo'
-  description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 Title:
   foreground: 'green'
   description: 'Titles for output from ":set all", ":autocmd" etc.'
-SpellBad:
-  foreground: 'red'
-  description: 'word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.'
-WarningMsg:
-  foreground: 'yellow'
-  description: 'warning messages'
-ErrorMsg:
-  foreground: 'red'
-  description: 'Error messages on the command line'
 Directory:
   foreground: 'blue'
   description: 'Directory names (and other special names in listings)'
-Question:
-  foreground: 'purple'
-  description: 'Hit-enter prompt and yes/no questions'
-SpellRare:
-  foreground: 'purple'
-  description: 'word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.'
-SpellLocal:
-  foreground: 'purple'
-  description: 'word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.'
-SpellCap:
-  foreground: 'purple'
-  description: 'word that should start with a capital. This will be combined with the highlighting used otherwise.'
-Conceal:
-  description: 'Placeholder characters substituted for concealed text'
-CustorIM:
-  description: 'Like Cursor, but used when in IME mode'
 Folded:
   foreground: 'textDarkOne'
   background: 'textThree'
   description: 'Line used closed folds'
-Foldcolumn:
-  description: 'Foldcolumn'
-SignColumn:
-  description: 'Column where signs are displayed'
 CursorLine:
   background: 'textThree'
-  description: 'The screen lune that the cursor is in when cursorline is set'
-CursorLineNr:
-  description: 'Like LineNr when cursorline or relativenumber is set for the cursor line'
-ModeMsg:
-  description: 'Showmode message, e.g -- INSERT --'
+  description: 'The screen line that the cursor is in when cursorline is set'
+
+#Attention
+Error:
+  foreground: 'red'
+  description: 'Any erroneous construct'
+ErrorMsg:
+  foreground: 'red'
+  description: 'Error messages on the command line'
+WarningMsg:
+  foreground: 'red'
+  description: 'warning messages'
+SpellBad:
+  foreground: 'red'
+  description: 'word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.'
+SpellCap:
+  foreground: 'red'
+  description: 'word that should start with a capital. This will be combined with the highlighting used otherwise.'
+SpellRare:
+  foreground: 'red'
+  description: 'word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.'
+SpellLocal:
+  foreground: 'red'
+  description: 'word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.'
+
+# Version control
 DiffAdd:
   foreground: 'bgThree'
   background: 'green'
@@ -241,3 +104,169 @@ DiffText:
   foreground: 'yellow'
   background: 'bgThree'
   description: 'Diff mode, changed text within a changed line'
+
+# Highlight
+Todo:
+  foreground: 'cyan'
+  description: 'Anything that needs extra attention; mostly the keywords TODO FIXME and XXX'
+MatchParen:
+  foreground: 'cyan'
+  gui: 'underline'
+  description: 'The character under the cursor or just before it, if it is a paired bracket and its match'
+Character:
+  foreground: 'cyan'
+  description: 'a character constant: c, \n, etc'
+CursorLineNr:
+  description: 'Like LineNr when cursorline or relativenumber is set for the cursor line'
+Visual:
+  foreground: 'textOne'
+  background: 'cyan'
+  description: 'Visual mode selection'
+VisualNOS:
+  background: 'cyan'
+  description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
+Search:
+  foreground: 'textOne'
+  background: 'cyan'
+  description: 'Last search pattern highlighting. Also used for highlighting the current line in the quickfix window'
+IncSearch:
+  foreground: 'cyan'
+  background: 'bgThree'
+  description: 'IncSearch highlighting, also used for the text replaced with :s///c'
+Question:
+  foreground: 'cyan'
+  description: 'Hit-enter prompt and yes/no questions'
+StatusLine:
+  foreground: 'cyan'
+  background: 'bgTwo'
+  description: 'Status line of current window'
+# TODO move this to be with comments etc
+StatusLineNC:
+  foreground: 'textDarkOne'
+  description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
+
+# Syntax Groups (:h w18)
+# Constants
+Constant:
+  foreground: 'yellow'
+  description: 'Any constant'
+Typedef:
+  foreground: 'yellow'
+  description: 'a typedef'
+String:
+  foreground: 'yellow'
+  description: 'A string constant: "this is a string"'
+Number:
+  foreground: 'yellow'
+  description: 'A number constant: 234, 0xff'
+Float:
+  foreground: 'yellow'
+  description: 'A floating point constant: 2.3e10'
+Boolean:
+  foreground: 'yellow'
+  description: 'A boolean constant: TRUE, false'
+
+
+# Identifiers
+Identifier:
+  foreground: 'purple'
+  description: 'Any variable name'
+Function:
+  foreground: 'purple'
+  description: 'Function name (also: methods for classes)'
+
+
+
+# Statements
+Statement:
+  foreground: 'orange'
+  description: 'Any statement'
+Operator: # TODO: Should this really be here, its not a statement, or maybe it should
+  foreground: 'orange'
+  description: 'Sizeof", "+", "*", etc.'
+PreCondit:
+  foreground: 'orange'
+  description: 'Preprocessor #if, #else, #endif, etc.'
+Conditional:
+  foreground: 'orange'
+  description: 'If, then, else, endif, switch, etc.'
+Repeat:
+  foreground: 'orange'
+  description: 'For, do, while, etc.'
+Label:
+  foreground: 'orange'
+  description: 'Case, default, etc.'
+Exception:
+  foreground: 'orange'
+  description: 'Try, catch, throw'
+
+
+
+# Types
+Type:
+  foreground: 'pink'
+  description: 'Int, long, char, etc.'
+StorageClass:
+  foreground: 'pink'
+  description: 'Static, register, volatile, etc.'
+Structure:
+  foreground: 'pink'
+  description: 'Struct, union, enum, etc.'
+
+# Globals
+Keyword:
+  foreground: 'yellow'
+  description: 'Any other keyword'
+PreProc:
+  foreground: 'yellow'
+  description: 'Generic Preprocessor'
+Define:
+  foreground: 'yellow'
+  description: 'Preprocessor #define'
+Macro:
+  foreground: 'yellow'
+  description: 'Same as Define'
+Include:
+  foreground: 'yellow'
+  description: 'Preprocessor #include'
+
+# Special
+Special:
+  foreground: 'green'
+  description: 'Any special symbol'
+SpecialKey:
+  foreground: 'green'
+  description: 'Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, listchars. generally: text that is displayed differently from what it really is.'
+NonText:
+  foreground: 'green'
+  description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
+
+# Trivial
+Comment:
+  foreground: 'textDarkOne'
+  description: 'Any comment'
+SpecialComment:
+  foreground: 'textDarkOne'
+  description: 'Special things inside a comment'
+
+# Disable any special highlighting
+Ignore:
+  description: 'Left blank, hidden'
+Conceal:
+  description: 'Placeholder characters substituted for concealed text'
+Tag:
+  description: 'You can use CTRL-] on this'
+Delimiter:
+  description: 'Character that needs attention'
+Debug:
+  description: 'Debugging statements'
+CustorIM:
+  description: 'Like Cursor, but used when in IME mode'
+Foldcolumn:
+  description: 'Foldcolumn'
+SignColumn:
+  description: 'Column where signs are displayed'
+ModeMsg:
+  description: 'Showmode message, e.g -- INSERT --'
+SpecialChar:
+  description: 'Special character in a constant'
