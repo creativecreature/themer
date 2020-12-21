@@ -162,35 +162,35 @@ Boolean:
 
 # Identifiers
 Identifier:
-  foreground: 'purple'
+  foreground: 'orange'
   description: 'Any variable name'
 Function:
-  foreground: 'purple'
+  foreground: 'orange'
   description: 'Function name (also: methods for classes)'
 
 
 
 # Statements
 Statement:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'Any statement'
 Operator:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'Sizeof", "+", "*", etc.'
 PreCondit:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'Preprocessor #if, #else, #endif, etc.'
 Conditional:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'If, then, else, endif, switch, etc.'
 Repeat:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'For, do, while, etc.'
 Label:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'Case, default, etc.'
 Exception:
-  foreground: 'orange'
+  foreground: 'purple'
   description: 'Try, catch, throw'
 
 

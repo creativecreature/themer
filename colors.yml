@@ -8,8 +8,8 @@ bgLightOne: 'hsl(208, 62%, 25%)'
 bgLightTwo: 'hsl(209, 55%, 33%)'
 
 # Primary text colors
-textOne: 'hsl(211, 63%, 95%)'
-textTwo: 'hsl(211, 63%, 92%)'
+textOne: 'hsl(211, 63%, 93%)'
+textTwo: 'hsl(211, 63%, 91%)'
 textThree: 'hsl(211, 62%, 89%)'
 
 textDarkOne: 'hsl(210, 25%, 44%)' # Used for vim status bar text
