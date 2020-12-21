@@ -29,7 +29,7 @@ hi VertSplit guifg=#112d4b guibg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#d2e2f4 guibg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi Title guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
-hi Directory guifg=#4d7cff guibg=NONE gui=NONE cterm=NONE
+hi Directory guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#54708c guibg=#d2e2f4 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
 hi Error guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE

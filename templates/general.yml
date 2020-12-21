@@ -55,7 +55,7 @@ Title:
   foreground: 'green'
   description: 'Titles for output from ":set all", ":autocmd" etc.'
 Directory:
-  foreground: 'blue'
+  foreground: 'orange'
   description: 'Directory names (and other special names in listings)'
 Folded:
   foreground: 'textDarkOne'
