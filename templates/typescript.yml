@@ -1,6 +1,10 @@
 # Globals
 typescriptImport:
   foreground: 'yellow'
+typescriptExport:
+  foreground: 'yellow'
 # Highlight
 # Statements
 # Types
+typescriptVariable:
+  foreground: 'pink'
