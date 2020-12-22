@@ -96,17 +96,12 @@ hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 "" BASH
 hi shSet guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi shSetOption guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi shStatement guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 
 "" JAVASCRIPT
 hi javascriptImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
-hi shSetOption guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
-hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
+hi jsAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 
 "" TYPESCRIPT
 hi typescriptImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
-hi shSetOption guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
-hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE

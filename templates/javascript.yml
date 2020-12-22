@@ -2,11 +2,7 @@
 javascriptImport:
   foreground: 'yellow'
 # Highlight
-shSetOption:
-  foreground: 'cyan'
 # Statements
-shStatement:
-  foreground: 'orange'
+jsAsyncKeyword:
+  foreground: 'purple'
 # Types
-shFunctionKey:
-  foreground: 'pink'

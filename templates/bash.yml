@@ -6,7 +6,7 @@ shSetOption:
   foreground: 'cyan'
 # Statements
 shStatement:
-  foreground: 'orange'
+  foreground: 'purple'
 # Types
 shFunctionKey:
   foreground: 'pink'
