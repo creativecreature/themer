@@ -159,7 +159,6 @@ Boolean:
   foreground: 'yellow'
   description: 'A boolean constant: TRUE, false'
 
-
 # Identifiers
 Identifier:
   foreground: 'orange'
@@ -167,8 +166,6 @@ Identifier:
 Function:
   foreground: 'orange'
   description: 'Function name (also: methods for classes)'
-
-
 
 # Statements
 Statement:
@@ -192,8 +189,6 @@ Label:
 Exception:
   foreground: 'purple'
   description: 'Try, catch, throw'
-
-
 
 # Types
 Type:
