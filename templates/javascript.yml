@@ -1,8 +1,14 @@
 # Globals
-javascriptImport:
+jsImport:
+  foreground: 'yellow'
+jsExport:
   foreground: 'yellow'
 # Highlight
 # Statements
+jsForAwait:
+  foreground: 'pink'
 jsAsyncKeyword:
-  foreground: 'purple'
+  foreground: 'pink'
 # Types
+javaScriptVariable:
+  foreground: 'pink'
