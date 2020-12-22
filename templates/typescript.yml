@@ -1,0 +1,12 @@
+# Globals
+typescriptImport:
+  foreground: 'yellow'
+# Highlight
+shSetOption:
+  foreground: 'cyan'
+# Statements
+shStatement:
+  foreground: 'orange'
+# Types
+shFunctionKey:
+  foreground: 'pink'
