@@ -125,7 +125,6 @@ hi typescriptPromiseStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptConsoleMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
-hi typescriptBlock guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFor guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
