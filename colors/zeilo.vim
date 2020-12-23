@@ -12,6 +12,9 @@ if exists("syntax_on")
 endif
 let g:colors_name="zeilo"
 
+syntax match tsFuncCall /\<\K\k*\ze\s*(/
+hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+
 "" GENERAL
 hi Normal guifg=#e2edf8 guibg=#112d4b gui=NONE cterm=NONE
 hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
@@ -107,6 +110,28 @@ hi jsAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi javaScriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 
 "" TYPESCRIPT
+hi typescriptNodeGlobal guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi typescriptGlobal guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptExport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi typescriptHeadersMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptArrayMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptStringMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptAsyncFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptObjectAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptAsyncFor guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptAsyncFunc guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptBinaryOp guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
+hi typescriptBraces guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptDestructureVariable guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptDestructureLabel guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptObjectLabel guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptFuncArg guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptArrowFuncArg guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+hi typescriptCall guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
+
+"" CUSTOM SYNTAX
+syntax match tsFuncCall /\<\K\k*\ze\s*(/
+hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
