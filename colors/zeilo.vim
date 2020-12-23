@@ -12,9 +12,6 @@ if exists("syntax_on")
 endif
 let g:colors_name="zeilo"
 
-syntax match tsFuncCall /\<\K\k*\ze\s*(/
-hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
-
 "" GENERAL
 hi Normal guifg=#e2edf8 guibg=#112d4b gui=NONE cterm=NONE
 hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
