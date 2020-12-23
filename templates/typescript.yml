@@ -21,6 +21,8 @@ typescriptPromiseStaticMethod:
   foreground: 'orange'
 typescriptObjectStaticMethod:
   foreground: 'orange'
+typescriptConsoleMethod:
+  foreground: 'orange'
 
 # Statements
 typescriptAsyncFuncKeyword:
@@ -34,8 +36,6 @@ typescriptFuncKeyword:
 typescriptAsyncFunc:
   foreground: 'purple'
 typescriptBinaryOp:
-  foreground: 'purple'
-typescriptConsoleMethod:
   foreground: 'purple'
 
 # Types
