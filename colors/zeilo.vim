@@ -114,6 +114,9 @@ hi typescriptNodeGlobal guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptGlobal guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptExport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi typescriptGlobalObjects guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi typescriptGlobalNodeObjects guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi typescriptTypeReference guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptHeadersMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptArrayMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptStringMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
@@ -121,6 +124,8 @@ hi typescriptJSONStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptPromiseStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptConsoleMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptBlock guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFor guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
@@ -135,7 +140,3 @@ hi typescriptObjectLabel guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncArg guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi typescriptArrowFuncArg guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi typescriptCall guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
-
-"" CUSTOM SYNTAX
-syntax match tsFuncCall /\<\K\k*\ze\s*(/
-hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
