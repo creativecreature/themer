@@ -23,14 +23,6 @@ syntax match tsFuncCall /\\<\\K\\k*\\ze\\s*(/
 hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 `
 
-const customSyntax = `\
-"" CUSTOM SYNTAX
-syntax match tsFuncCall /\\<\\K\\k*\\ze\\s*(/
-hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
-`
-
-// TODO: https://stackoverflow.com/questions/10225011/highlight-all-upper-case-words-in-vim/10225584
-
 const renderSection = (key, sections) => `\
 "" ${key.toUpperCase()}
 ${Object.values(sections[key]).join(NEW_LINE)}
@@ -39,8 +31,7 @@ ${Object.values(sections[key]).join(NEW_LINE)}
 const toRenderString = sections => `\
 ${header}
 ${prefix}
-${Object.keys(sections).map(key => renderSection(key, sections)).join(NEW_LINE)}
-${customSyntax}`
+${Object.keys(sections).map(key => renderSection(key, sections)).join(NEW_LINE)}`
 
 const render = sections => {
   fs.mkdirSync('./colors')

@@ -7,6 +7,12 @@ typescriptImport:
   foreground: 'yellow'
 typescriptExport:
   foreground: 'yellow'
+typescriptGlobalObjects:
+  foreground: 'yellow'
+typescriptGlobalNodeObjects:
+  foreground: 'yellow'
+typescriptTypeReference:
+  foreground: 'yellow'
 
 # Identifiers
 typescriptHeadersMethod:
@@ -22,6 +28,8 @@ typescriptPromiseStaticMethod:
 typescriptObjectStaticMethod:
   foreground: 'orange'
 typescriptConsoleMethod:
+  foreground: 'orange'
+typescriptFuncCall:
   foreground: 'orange'
 
 # Statements
