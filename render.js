@@ -18,9 +18,6 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name="zeilo"
-
-syntax match tsFuncCall /\\<\\K\\k*\\ze\\s*(/
-hi tsFuncCall guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 `
 
 const renderSection = (key, sections) => `\
