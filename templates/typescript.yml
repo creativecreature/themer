@@ -1,10 +1,51 @@
 # Globals
+typescriptNodeGlobal:
+  foreground: 'yellow'
+typescriptGlobal:
+  foreground: 'yellow'
 typescriptImport:
   foreground: 'yellow'
 typescriptExport:
   foreground: 'yellow'
-# Highlight
+
+# Identifiers
+typescriptHeadersMethod:
+  foreground: 'orange'
+typescriptArrayMethod:
+  foreground: 'orange'
+typescriptStringMethod:
+  foreground: 'orange'
+
 # Statements
+typescriptAsyncFuncKeyword:
+  foreground: 'purple'
+typescriptObjectAsyncKeyword:
+  foreground: 'purple'
+typescriptAsyncFor:
+  foreground: 'purple'
+typescriptFuncKeyword:
+  foreground: 'purple'
+typescriptAsyncFunc:
+  foreground: 'purple'
+typescriptBinaryOp:
+  foreground: 'purple'
+
 # Types
 typescriptVariable:
   foreground: 'pink'
+
+# Reset
+typescriptBraces:
+  foreground: 'textOne'
+typescriptDestructureVariable:
+  foreground: 'textOne'
+typescriptDestructureLabel:
+  foreground: 'textOne'
+typescriptObjectLabel:
+  foreground: 'textOne'
+typescriptFuncArg:
+  foreground: 'textOne'
+typescriptArrowFuncArg:
+  foreground: 'textOne'
+typescriptCall:
+  foreground: 'textOne'
