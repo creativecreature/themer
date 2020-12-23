@@ -120,13 +120,13 @@ hi typescriptStringMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptJSONStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptPromiseStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectStaticMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
+hi typescriptConsoleMethod guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptObjectAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFor guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFunc guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptBinaryOp guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
-hi typescriptConsoleMethod guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 hi typescriptBraces guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi typescriptDestructureVariable guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
