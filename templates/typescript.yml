@@ -45,6 +45,8 @@ typescriptAsyncFunc:
   foreground: 'purple'
 typescriptBinaryOp:
   foreground: 'purple'
+typescriptAssign:
+  foreground: 'purple'
 
 # Types
 typescriptVariable:

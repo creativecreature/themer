@@ -128,6 +128,7 @@ hi typescriptAsyncFor guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptAsyncFunc guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptBinaryOp guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
+hi typescriptAssign guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi typescriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 hi typescriptBraces guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
 hi typescriptDestructureVariable guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
