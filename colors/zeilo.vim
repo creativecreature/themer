@@ -14,11 +14,11 @@ let g:colors_name="zeilo"
 
 "" GENERAL
 hi Normal guifg=#e2edf8 guibg=#112d4b gui=NONE cterm=NONE
-hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
+hi Cursor guifg=#06182d guibg=#72b5fe gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
 hi String guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#54708c guibg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#265682 guibg=#4d7cff gui=NONE cterm=NONE
+hi WildMenu guifg=#265682 guibg=#72b5fe gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#184267 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#dae8f7 gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#e2edf8 gui=NONE cterm=NONE
@@ -32,15 +32,15 @@ hi Title guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
 hi Directory guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#54708c guibg=#d2e2f4 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
-hi Error guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi ErrorMsg guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi WarningMsg guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi SpellBad guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi SpellCap guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi SpellRare guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi SpellLocal guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
+hi Error guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi ErrorMsg guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi WarningMsg guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi SpellBad guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi SpellCap guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi SpellRare guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
+hi SpellLocal guifg=#f65164 guibg=NONE gui=NONE cterm=NONE
 hi DiffAdd guifg=#06182d guibg=#c0ff61 gui=NONE cterm=NONE
-hi DiffDelete guifg=#06182d guibg=#d84b60 gui=NONE cterm=NONE
+hi DiffDelete guifg=#06182d guibg=#f65164 gui=NONE cterm=NONE
 hi DiffChange guifg=#06182d guibg=#ffda6b gui=NONE cterm=NONE
 hi DiffText guifg=#ffda6b guibg=#06182d gui=NONE cterm=NONE
 hi Todo guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
@@ -102,7 +102,6 @@ hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 "" JAVASCRIPT
 hi jsImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi jsExport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
-hi jsDestructuringBraces guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
 hi jsForAwait guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi jsAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi javaScriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE

@@ -22,5 +22,5 @@ cyan: 'hsl(190, 100%, 50%)'
 orange: 'hsl(29, 100%, 67%)'
 yellow: 'hsl(45, 100%, 71%)' # Used for insert mode background
 green: 'hsl(84, 100%, 69%)'
-red: 'hsl(351, 64%, 57%)'
-blue: 'hsl(224, 100%, 65%)'
+red: 'hsl(353, 90%, 64%)'
+blue: 'hsl(211, 98%, 72%)'
