@@ -16,7 +16,7 @@ let g:colors_name="zeilo"
 hi Normal guifg=#e2edf8 guibg=#112d4b gui=NONE cterm=NONE
 hi Cursor guifg=#06182d guibg=#4d7cff gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
-hi String guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
+hi String guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#265682 guibg=#4d7cff gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#184267 gui=NONE cterm=NONE
@@ -28,7 +28,7 @@ hi CursorColumn guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
 hi VertSplit guifg=#112d4b guibg=NONE gui=NONE cterm=NONE
 hi TabLine guifg=#d2e2f4 guibg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#e2edf8 guibg=NONE gui=NONE cterm=NONE
-hi Title guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
+hi Title guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
 hi Directory guifg=#ffa857 guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#54708c guibg=#d2e2f4 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=#d2e2f4 gui=NONE cterm=NONE
@@ -39,7 +39,7 @@ hi SpellBad guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi SpellCap guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi SpellRare guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
 hi SpellLocal guifg=#d84b60 guibg=NONE gui=NONE cterm=NONE
-hi DiffAdd guifg=#06182d guibg=#b0ec55 gui=NONE cterm=NONE
+hi DiffAdd guifg=#06182d guibg=#c0ff61 gui=NONE cterm=NONE
 hi DiffDelete guifg=#06182d guibg=#d84b60 gui=NONE cterm=NONE
 hi DiffChange guifg=#06182d guibg=#ffda6b gui=NONE cterm=NONE
 hi DiffText guifg=#ffda6b guibg=#06182d gui=NONE cterm=NONE
@@ -75,8 +75,8 @@ hi PreProc guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Define guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi Include guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
-hi Special guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
-hi SpecialKey guifg=#b0ec55 guibg=NONE gui=NONE cterm=NONE
+hi Special guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
+hi SpecialKey guifg=#c0ff61 guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi SpecialComment guifg=#54708c guibg=NONE gui=NONE cterm=NONE
 hi StatusLineNC guifg=#54708c guibg=NONE gui=NONE cterm=NONE
@@ -102,6 +102,7 @@ hi shFunctionKey guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE
 "" JAVASCRIPT
 hi jsImport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
 hi jsExport guifg=#ffda6b guibg=NONE gui=NONE cterm=NONE
+hi jsDestructuringBraces guifg=#00d5ff guibg=NONE gui=NONE cterm=NONE
 hi jsForAwait guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi jsAsyncKeyword guifg=#8095ff guibg=NONE gui=NONE cterm=NONE
 hi javaScriptVariable guifg=#c690e9 guibg=NONE gui=NONE cterm=NONE

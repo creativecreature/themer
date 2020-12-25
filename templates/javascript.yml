@@ -4,6 +4,8 @@ jsImport:
 jsExport:
   foreground: 'yellow'
 # Highlight
+jsDestructuringBraces:
+  foreground: 'cyan'
 # Statements
 jsForAwait:
   foreground: 'purple'
