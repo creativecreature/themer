@@ -60,13 +60,13 @@ hi Float guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
 hi Function guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
-hi Statement guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi Operator guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi PreCondit guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi Repeat guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi Label guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi Exception guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
+hi Statement guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi Operator guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi PreCondit guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi Repeat guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi Label guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi Exception guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi Type guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 hi StorageClass guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 hi Structure guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
@@ -96,14 +96,14 @@ hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 "" BASH
 hi shSet guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi shSetOption guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
+hi shStatement guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi shFunctionKey guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 
 "" JAVASCRIPT
 hi jsImport guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi jsExport guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi jsForAwait guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
-hi jsAsyncKeyword guifg=#c894eb guibg=NONE gui=NONE cterm=NONE
+hi jsForAwait guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
+hi jsAsyncKeyword guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi javaScriptVariable guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 
 "" TYPESCRIPT
