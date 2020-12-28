@@ -6,9 +6,9 @@ jsExport:
 # Highlight
 # Statements
 jsForAwait:
-  foreground: 'purple'
+  foreground: 'pink'
 jsAsyncKeyword:
-  foreground: 'purple'
+  foreground: 'pink'
 # Types
 javaScriptVariable:
-  foreground: 'pink'
+  foreground: 'purple'

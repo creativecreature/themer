@@ -169,36 +169,36 @@ Function:
 
 # Statements
 Statement:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'Any statement'
 Operator:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'Sizeof", "+", "*", etc.'
 PreCondit:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'Preprocessor #if, #else, #endif, etc.'
 Conditional:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'If, then, else, endif, switch, etc.'
 Repeat:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'For, do, while, etc.'
 Label:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'Case, default, etc.'
 Exception:
-  foreground: 'purple'
+  foreground: 'pink'
   description: 'Try, catch, throw'
 
 # Types
 Type:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Int, long, char, etc.'
 StorageClass:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Static, register, volatile, etc.'
 Structure:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Struct, union, enum, etc.'
 
 # Globals
