@@ -1,96 +1,96 @@
 normal:
   left:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'orange'
     meta:
-      foreground:
-      background:
+      foreground: 'orange'
+      background: 'bgLightOne'
   right:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'orange'
     meta:
-      foreground:
-      background:
+      foreground: 'orange'
+      background: 'bgLightOne'
   middle:
-    foreground:
-    background:
+    foreground: 'textDarkOne'
+    background: 'bgOne'
   warning:
-    foreground:
-    background:
+    foreground: 'bgOne'
+    background: 'yellow'
   error:
-    foreground:
-    background:
+    foreground: 'bgOne'
+    background: 'yellow'
 insert:
   left:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'pink'
     meta:
-      foreground:
-      background:
+      foreground: 'pink'
+      background: 'bgLightOne'
   right:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'pink'
     meta:
-      foreground:
-      background:
+      foreground: 'pink'
+      background: 'bgLightOne'
   middle:
-    foreground:
-    background:
+    foreground: 'textDarkOne'
+    background: 'bgOne'
 visual:
   left:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'cyan'
     meta:
-      foreground:
-      background:
+      foreground: 'cyan'
+      background: 'bgLightOne'
   right:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'cyan'
     meta:
-      foreground:
-      background:
+      foreground: 'cyan'
+      background: 'bgLightOne'
   middle:
-    foreground:
-    background:
+    foreground: 'textDarkOne'
+    background: 'bgOne'
 replace:
   left:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'green'
     meta:
-      foreground:
-      background:
+      foreground: 'green'
+      background: 'bgLightOne'
   right:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'green'
     meta:
-      foreground:
-      background:
+      foreground: 'green'
+      background: 'bgLightOne'
   middle:
-    foreground:
-    background:
+    foreground: 'textDarkOne'
+    background: 'bgOne'
 inactive:
   left:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'bgLightOne'
     meta:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'bgLightOne'
   right:
     highlight:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'bgLightOne'
     meta:
-      foreground:
-      background:
+      foreground: 'bgOne'
+      background: 'bgLightOne'
   middle:
-    foreground:
-    background:
+    foreground: 'bgOne'
+    background: 'bgLightOne'

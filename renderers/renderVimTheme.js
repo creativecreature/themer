@@ -30,9 +30,9 @@ ${header}
 ${prefix}
 ${Object.keys(sections).map(key => renderSection(key, sections)).join(NEW_LINE)}`
 
-const render = sections => {
-  fs.mkdirSync('./colors')
+const renderVimTheme = sections => {
+  fs.mkdirSync('./colors',)
   fs.writeFileSync('./colors/zeilo.vim', toRenderString(sections))
 }
 
-module.exports = render
+module.exports = renderVimTheme

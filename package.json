@@ -4,7 +4,7 @@
   "description": "vim-theme renderer",
   "main": "index.js",
   "scripts": {
-    "prerender": "rimraf colors",
+    "prerender": "rimraf colors autoload",
     "render": "node index.js"
   },
   "repository": {
