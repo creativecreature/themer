@@ -12,38 +12,38 @@ const header = `\
 const reset = 'let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {}}'
 
 const renderNormalMode = ({ normal: { left, right, middle, warning, error } }) => `\
-let s:p.normal.left     = [[["${left.highlight.foreground}", 0], ["${left.highlight.background}", 0]], [["${left.meta.foreground}", 0], ["${left.meta.background}", 0]]]
-let s:p.normal.right    = [[["${right.highlight.foreground}", 0], ["${right.highlight.background}", 0]], [["${right.meta.foreground}", 0], ["${right.meta.background}", 0]]]
-let s:p.normal.middle   = [[["${middle.foreground}", 0], ["${middle.background}", 0]]]
-let s:p.normal.warning  = [[["${warning.foreground}", 0], ["${warning.background}", 0]]]
-let s:p.normal.error    = [[["${error.foreground}", 0], ["${error.background}", 0]]]
+let s:p.normal.left     = [ ["${left.highlight.foreground}", "${left.highlight.background}"], ["${left.meta.foreground}", "${left.meta.background}"] ]
+let s:p.normal.right    = [ ["${right.highlight.foreground}", "${right.highlight.background}"], ["${right.meta.foreground}", "${right.meta.background}"] ]
+let s:p.normal.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
+let s:p.normal.warning  = [ ["${warning.foreground}", "${warning.background}"] ]
+let s:p.normal.error    = [ ["${error.foreground}", "${error.background}"] ]
 `
 
 const renderInsertMode = ({ insert: { left, right, middle } }) => `\
-let s:p.insert.left     = [[["${left.highlight.foreground}", 0], ["${left.highlight.background}", 0]], [["${left.meta.foreground}", 0], ["${left.meta.background}", 0]]]
-let s:p.insert.right    = [[["${right.highlight.foreground}", 0], ["${right.highlight.background}", 0]], [["${right.meta.foreground}", 0], ["${right.meta.background}", 0]]]
-let s:p.insert.middle   = [[["${middle.foreground}", 0], ["${middle.background}", 0]]]
+let s:p.insert.left     = [ ["${left.highlight.foreground}", "${left.highlight.background}"], ["${left.meta.foreground}", "${left.meta.background}"] ]
+let s:p.insert.right    = [ ["${right.highlight.foreground}", "${right.highlight.background}"], ["${right.meta.foreground}", "${right.meta.background}"] ]
+let s:p.insert.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
 `
 
 const renderVisualMode = ({ visual: { left, right, middle } }) => `\
-let s:p.visual.left     = [[["${left.highlight.foreground}", 0], ["${left.highlight.background}", 0]], [["${left.meta.foreground}", 0], ["${left.meta.background}", 0]]]
-let s:p.visual.right    = [[["${right.highlight.foreground}", 0], ["${right.highlight.background}", 0]], [["${right.meta.foreground}", 0], ["${right.meta.background}", 0]]]
-let s:p.visual.middle   = [[["${middle.foreground}", 0], ["${middle.background}", 0]]]
+let s:p.visual.left     = [ ["${left.highlight.foreground}", "${left.highlight.background}"], ["${left.meta.foreground}", "${left.meta.background}"] ]
+let s:p.visual.right    = [ ["${right.highlight.foreground}", "${right.highlight.background}"], ["${right.meta.foreground}", "${right.meta.background}"] ]
+let s:p.visual.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
 `
 
 const renderReplaceMode = ({ replace: { left, right, middle } }) => `\
-let s:p.replace.left     = [[["${left.highlight.foreground}", 0], ["${left.highlight.background}", 0]], [["${left.meta.foreground}", 0], ["${left.meta.background}", 0]]]
-let s:p.replace.right    = [[["${right.highlight.foreground}", 0], ["${right.highlight.background}", 0]], [["${right.meta.foreground}", 0], ["${right.meta.background}", 0]]]
-let s:p.replace.middle   = [[["${middle.foreground}", 0], ["${middle.background}", 0]]]
+let s:p.replace.left     = [ ["${left.highlight.foreground}", "${left.highlight.background}"], ["${left.meta.foreground}", "${left.meta.background}"] ]
+let s:p.replace.right    = [ ["${right.highlight.foreground}", "${right.highlight.background}"], ["${right.meta.foreground}", "${right.meta.background}"] ]
+let s:p.replace.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
 `
 
 const renderInactive = ({ inactive: { left, right, middle } }) => `\
-let s:p.inactive.left     = [[["${left.highlight.foreground}", 0], ["${left.highlight.background}", 0]], [["${left.meta.foreground}", 0], ["${left.meta.background}", 0]]]
-let s:p.inactive.right    = [[["${right.highlight.foreground}", 0], ["${right.highlight.background}", 0]], [["${right.meta.foreground}", 0], ["${right.meta.background}", 0]]]
-let s:p.inactive.middle   = [[["${middle.foreground}", 0], ["${middle.background}", 0]]]
+let s:p.inactive.left     = [ ["${left.highlight.foreground}", "${left.highlight.background}"], ["${left.meta.foreground}", "${left.meta.background}"] ]
+let s:p.inactive.right    = [ ["${right.highlight.foreground}", "${right.highlight.background}"], ["${right.meta.foreground}", "${right.meta.background}"] ]
+let s:p.inactive.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
 `
 
-const setPalette = 'let g:lightline#colorscheme#zeilo#palette = lightline#colorscheme#flatten(s:p)'
+const setPalette = 'let g:lightline#colorscheme#zeilo#palette = lightline#colorscheme#fill(s:p)'
 
 const toRenderString = lightline => `\
 ${header}
