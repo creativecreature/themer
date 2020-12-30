@@ -9,6 +9,7 @@ typescriptGlobalNodeObjects:
 # Identifiers
 typescriptFuncCall:
   foreground: 'orange'
+  description: 'This is a custom syntax match that I have in my nvim config'
 
 # Statements
 

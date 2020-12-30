@@ -16,7 +16,6 @@ const toNumbers = m => m.flat().slice(1, 4).map(s => parseInt(s))
 const toHex = args => hslToHex(...args)
 const getColor = pipe([getMatches, toNumbers,  toHex])
 
-
 const format = obj => Object.keys(obj).reduce((acc, cur) => ({
       ...acc,
       [cur]: Object.keys(obj[cur]).reduce((a, c) => ({
