@@ -14,11 +14,11 @@ let g:colors_name="zeilo"
 
 "" GENERAL
 hi Normal guifg=#d4d7e2 guibg=#292d3d gui=NONE cterm=NONE
-hi Cursor guifg=#212431 guibg=#80b0ff gui=NONE cterm=NONE
+hi Cursor guifg=#d4d7e2 guibg=#8adeff gui=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline cterm=underline
 hi String guifg=#c3e88d guibg=NONE gui=NONE cterm=NONE
 hi LineNr guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#454b63 guibg=#80b0ff gui=NONE cterm=NONE
+hi WildMenu guifg=#d4d7e2 guibg=#454b63 gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#33384d gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#ced1de gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#d4d7e2 gui=NONE cterm=NONE

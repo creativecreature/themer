@@ -16,11 +16,11 @@ textThree: 'hsl(229, 20%, 82%)'
 textDarkOne: 'hsl(229, 20%, 44%)' # Used for vim status bar text
 
 # General colors to draw attention
-pink: 'hsl(276, 63%, 75%)'
-purple: 'hsl(231, 53%, 72%)'
+pink: 'hsl(323, 52%, 71%)'
+purple: 'hsl(276, 63%, 75%)'
+blue: 'hsl(231, 53%, 72%)'
 cyan: 'hsl(197, 100%, 77%)'
 orange: 'hsl(14, 90%, 70%)'
 yellow: 'hsl(39, 100%, 71%)'
 green: 'hsl(84, 66%, 73%)'
 red: 'hsl(350, 100%, 76%)'
-blue: 'hsl(217, 100%, 75%)'

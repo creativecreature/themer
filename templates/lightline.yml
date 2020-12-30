@@ -2,16 +2,16 @@ normal:
   left:
     highlight:
       foreground: 'bgOne'
-      background: 'orange'
+      background: 'pink'
     meta:
-      foreground: 'orange'
+      foreground: 'pink'
       background: 'bgLightOne'
   right:
     highlight:
       foreground: 'bgOne'
-      background: 'orange'
+      background: 'pink'
     meta:
-      foreground: 'orange'
+      foreground: 'pink'
       background: 'bgLightOne'
   middle:
     foreground: 'textDarkOne'
@@ -21,21 +21,21 @@ normal:
     background: 'yellow'
   error:
     foreground: 'bgOne'
-    background: 'yellow'
+    background: 'red'
 insert:
   left:
     highlight:
       foreground: 'bgOne'
-      background: 'pink'
+      background: 'red'
     meta:
-      foreground: 'pink'
+      foreground: 'red'
       background: 'bgLightOne'
   right:
     highlight:
       foreground: 'bgOne'
-      background: 'pink'
+      background: 'red'
     meta:
-      foreground: 'pink'
+      foreground: 'red'
       background: 'bgLightOne'
   middle:
     foreground: 'textDarkOne'

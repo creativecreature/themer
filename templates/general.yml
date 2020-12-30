@@ -4,8 +4,8 @@ Normal:
   background: 'bgOne'
   description: 'Normal text'
 Cursor:
-  foreground: 'bgThree'
-  background: 'blue'
+  foreground: 'textOne'
+  background: 'cyan'
   description: 'The character under the cursor'
 Underlined:
   gui: 'underline'
@@ -20,8 +20,8 @@ LineNr:
   foreground: 'textDarkOne'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 WildMenu:
-  foreground: 'bgLightTwo'
-  background: 'blue'
+  foreground: 'textOne'
+  background: 'bgLightTwo'
   description: 'Current match in wildmenu completion'
 Pmenu:
   background: 'bgLightOne'
@@ -169,36 +169,36 @@ Function:
 
 # Statements
 Statement:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Any statement'
 Operator:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Sizeof", "+", "*", etc.'
 PreCondit:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Preprocessor #if, #else, #endif, etc.'
 Conditional:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'If, then, else, endif, switch, etc.'
 Repeat:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'For, do, while, etc.'
 Label:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Case, default, etc.'
 Exception:
-  foreground: 'pink'
+  foreground: 'purple'
   description: 'Try, catch, throw'
 
 # Types
 Type:
-  foreground: 'purple'
+  foreground: 'blue'
   description: 'Int, long, char, etc.'
 StorageClass:
-  foreground: 'purple'
+  foreground: 'blue'
   description: 'Static, register, volatile, etc.'
 Structure:
-  foreground: 'purple'
+  foreground: 'blue'
   description: 'Struct, union, enum, etc.'
 
 # Globals
