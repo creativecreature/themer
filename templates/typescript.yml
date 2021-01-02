@@ -20,3 +20,7 @@ typescriptBraces:
   foreground: 'textOne'
 typescriptFuncArg:
   foreground: 'textOne'
+
+# Attention
+typescriptExceptions:
+  foreground: 'red'

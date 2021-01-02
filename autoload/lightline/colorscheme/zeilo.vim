@@ -1,6 +1,6 @@
 " ===============================================================
 " Zeilo
-" A lightline color theme
+" lightline color theme
 " URL: TODO
 " Author: Charles Victor Conner
 " ===============================================================

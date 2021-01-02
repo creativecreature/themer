@@ -1,7 +1,6 @@
 " ===============================================================
 " Zeilo
 " A vim color theme
-" URL: TODO
 " Author: Charles Victor Conner
 " ===============================================================
 
@@ -113,3 +112,4 @@ hi typescriptGlobalNodeObjects guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncCall guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
 hi typescriptBraces guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
 hi typescriptFuncArg guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
+hi typescriptExceptions guifg=#ff8599 guibg=NONE gui=NONE cterm=NONE
