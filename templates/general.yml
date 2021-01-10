@@ -59,7 +59,7 @@ Directory:
   description: 'Directory names (and other special names in listings)'
 Folded:
   foreground: 'textDarkOne'
-  background: 'textThree'
+  background: 'bgTwo'
   description: 'Line used closed folds'
 CursorLine:
   background: 'textThree'
