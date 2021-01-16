@@ -4,7 +4,6 @@ const header = `\
 " ===============================================================
 " Zeilo
 " lightline color theme
-" URL: TODO
 " Author: Charles Victor Conner
 " ===============================================================
 `
