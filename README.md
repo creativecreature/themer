@@ -1,9 +1,15 @@
 # Themer
-Helps you generate vim themes from yaml files.
+Themer is a project I've created for generating my color themes. It turns
+*yaml* templates into syntax files.
 
-# Vim
+## Requirements
+- node
+- npm
+- yarn
 
-# Lightline
+## Setup
+Open up a terminal and type `yarn` to install the projects dependencies. To
+render the syntax files execute `yarn render`.
 
-## Highlighting the colors in the colors.yml file
-See :h colorize
+It will output syntax files for *vim* and *lightline*. The theme is called
+*creativecreature*.
