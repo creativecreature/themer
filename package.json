@@ -1,5 +1,5 @@
 {
-  "name": "zeilo",
+  "name": "themer",
   "version": "1.0.0",
   "description": "vim-theme renderer",
   "main": "index.js",

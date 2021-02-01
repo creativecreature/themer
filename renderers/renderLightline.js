@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const header = `\
 " ===============================================================
-" Zeilo
+" Creative Creatire
 " lightline color theme
 " Author: Charles Victor Conner
 " ===============================================================
@@ -42,7 +42,7 @@ let s:p.inactive.right    = [ ["${right.highlight.foreground}", "${right.highlig
 let s:p.inactive.middle   = [ ["${middle.foreground}", "${middle.background}"] ]
 `
 
-const setPalette = 'let g:lightline#colorscheme#zeilo#palette = lightline#colorscheme#fill(s:p)'
+const setPalette = 'let g:lightline#colorscheme#creativecreature#palette = lightline#colorscheme#fill(s:p)'
 
 const toRenderString = lightline => `\
 ${header}
@@ -57,7 +57,7 @@ ${setPalette}
 
 const renderLightline = (lightline) => {
   fs.mkdirSync('./autoload/lightline/colorscheme', { recursive: true })
-  fs.writeFileSync('./autoload/lightline/colorscheme/zeilo.vim', toRenderString(lightline))
+  fs.writeFileSync('./autoload/lightline/colorscheme/creativecreature.vim', toRenderString(lightline))
 }
 
 module.exports = renderLightline

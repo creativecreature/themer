@@ -4,9 +4,9 @@ const NEW_LINE = '\n'
 
 const header = `\
 " ===============================================================
-" Zeilo
+" Creative Creature
 " A vim color theme
-" Author: Charles Victor Conner
+" Author: Victor Conner
 " ===============================================================
 `
 
@@ -16,7 +16,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name="zeilo"
+let g:colors_name="creativecreature"
 `
 
 const renderSection = (key, sections) => `\
@@ -31,7 +31,7 @@ ${Object.keys(sections).map(key => renderSection(key, sections)).join(NEW_LINE)}
 
 const renderVimTheme = sections => {
   fs.mkdirSync('./colors',)
-  fs.writeFileSync('./colors/zeilo.vim', toRenderString(sections))
+  fs.writeFileSync('./colors/creativecreature.vim', toRenderString(sections))
 }
 
 module.exports = renderVimTheme
