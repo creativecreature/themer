@@ -1,7 +1,6 @@
 " ===============================================================
-" Zeilo
+" Creative Creatire
 " lightline color theme
-" URL: TODO
 " Author: Charles Victor Conner
 " ===============================================================
 
@@ -28,4 +27,4 @@ let s:p.inactive.left     = [ ["#292d3d", "#33384d"], ["#292d3d", "#33384d"] ]
 let s:p.inactive.right    = [ ["#292d3d", "#33384d"], ["#292d3d", "#33384d"] ]
 let s:p.inactive.middle   = [ ["#292d3d", "#33384d"] ]
 
-let g:lightline#colorscheme#zeilo#palette = lightline#colorscheme#fill(s:p)
+let g:lightline#colorscheme#creativecreature#palette = lightline#colorscheme#fill(s:p)

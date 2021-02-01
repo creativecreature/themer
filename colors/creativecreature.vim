@@ -1,7 +1,7 @@
 " ===============================================================
-" Zeilo
+" Creative Creature
 " A vim color theme
-" Author: Charles Victor Conner
+" Author: Victor Conner
 " ===============================================================
 
 set background=dark
@@ -9,7 +9,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name="zeilo"
+let g:colors_name="creativecreature"
 
 "" GENERAL
 hi Normal guifg=#d4d7e2 guibg=#292d3d gui=NONE cterm=NONE
