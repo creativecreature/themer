@@ -1,243 +1,243 @@
 # General
 Normal:
-  foreground: 'textOne'
-  background: 'bgOne'
+  foreground: 'colorText'
+  background: 'colorBackground'
   description: 'Normal text'
 Cursor:
-  foreground: 'textOne'
-  background: 'cyan'
+  foreground: 'colorText'
+  background: 'colorHighlight'
   description: 'The character under the cursor'
 Underlined:
   gui: 'underline'
   cterm: 'underline'
   description: 'Text that stands out, HTML links'
 String:
-  foreground: 'green'
+  foreground: 'colorSpecial'
   description: 'A string constant: "this is a string"'
 
 # UI
 LineNr:
-  foreground: 'textDarkOne'
+  foreground: 'colorTextDarkThree'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 WildMenu:
-  foreground: 'textOne'
-  background: 'bgLightTwo'
+  foreground: 'colorText'
+  background: 'colorBackgroundLightTwo'
   description: 'Current match in wildmenu completion'
 Pmenu:
-  background: 'bgLightOne'
+  background: 'colorBackgroundLightOne'
   description: 'Popup menu, normal item'
 PmenuSbar:
-  background: 'textTwo'
+  background: 'colorTextDarkOne'
   description: 'Popup menu, scrollbar'
 PmenuThumb:
-  background: 'textOne'
+  background: 'colorText'
   description: 'Popup menu, thumb of the scrollbar'
 PmenuSel:
-  foreground: 'textOne'
-  background: 'bgLightTwo'
+  foreground: 'colorText'
+  background: 'colorBackgroundLightTwo'
   description: 'Popup menu selected item'
 ColorColumn:
-  background: 'textThree'
+  background: 'colorTextDarkTwo'
   description: 'Used for the columns set with colorcolumn'
 CursorColumn:
-  background: 'textThree'
+  background: 'colorTextDarkTwo'
   description: 'The screen column that the cursor is in when cursorcolumn is set'
 VertSplit:
-  foreground: 'bgOne'
+  foreground: 'colorBackground'
   description: 'The column separating vertically split windows'
 TabLine:
-  foreground: 'textThree'
+  foreground: 'colorTextDarkTwo'
   description: 'Tab pages line, not active tab page label'
 TabLineSel:
-  foreground: 'textOne'
+  foreground: 'colorText'
   description: 'Tab pages line, active tab page label'
 Title:
-  foreground: 'green'
+  foreground: 'colorSpecial'
   description: 'Titles for output from ":set all", ":autocmd" etc.'
 Directory:
-  foreground: 'orange'
+  foreground: 'colorIdentifier'
   description: 'Directory names (and other special names in listings)'
 Folded:
-  foreground: 'textDarkOne'
-  background: 'bgTwo'
+  foreground: 'colorTextDarkThree'
+  background: 'colorBackgroundDarkOne'
   description: 'Line used closed folds'
 CursorLine:
-  background: 'textThree'
+  background: 'colorTextDarkTwo'
   description: 'The screen line that the cursor is in when cursorline is set'
 
 #Attention
 Error:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'Any erroneous construct'
 ErrorMsg:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'Error messages on the command line'
 WarningMsg:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'warning messages'
 SpellBad:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.'
 SpellCap:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'word that should start with a capital. This will be combined with the highlighting used otherwise.'
 SpellRare:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.'
 SpellLocal:
-  foreground: 'red'
+  foreground: 'colorAttention'
   description: 'word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.'
 
 # Version control
 DiffAdd:
-  foreground: 'bgThree'
-  background: 'green'
+  foreground: 'colorBackgroundDarkTwo'
+  background: 'colorSpecial'
   description: 'Diff mode, added line'
 DiffDelete:
-  foreground: 'bgThree'
-  background: 'red'
+  foreground: 'colorBackgroundDarkTwo'
+  background: 'colorAttention'
   description: 'Diff mode, deleted line'
 DiffChange:
-  foreground: 'bgThree'
-  background: 'yellow'
+  foreground: 'colorBackgroundDarkTwo'
+  background: 'colorGlobal'
   description: 'Diff mode, changed line'
 DiffText:
-  foreground: 'yellow'
-  background: 'bgThree'
+  foreground: 'colorGlobal'
+  background: 'colorBackgroundDarkTwo'
   description: 'Diff mode, changed text within a changed line'
 
 # Highlight
 Todo:
-  foreground: 'cyan'
+  foreground: 'colorHighlight'
   description: 'Anything that needs extra attention; mostly the keywords TODO FIXME and XXX'
 MatchParen:
-  foreground: 'cyan'
+  foreground: 'colorHighlight'
   gui: 'underline'
-  description: 'The character under the cursor or just before it, if it is a paired bracket and its match'
+  description: 'The character under the cursor or just before it, if it is a paicolorAttention bracket and its match'
 Character:
-  foreground: 'cyan'
+  foreground: 'colorHighlight'
   description: 'a character constant: c, \n, etc'
 CursorLineNr:
   description: 'Like LineNr when cursorline or relativenumber is set for the cursor line'
 Visual:
-  foreground: 'textOne'
-  background: 'cyan'
+  foreground: 'colorText'
+  background: 'colorHighlight'
   description: 'Visual mode selection'
 VisualNOS:
-  background: 'cyan'
+  background: 'colorHighlight'
   description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
 Search:
-  foreground: 'textOne'
-  background: 'cyan'
+  foreground: 'colorText'
+  background: 'colorHighlight'
   description: 'Last search pattern highlighting. Also used for highlighting the current line in the quickfix window'
 IncSearch:
-  foreground: 'cyan'
-  background: 'bgThree'
+  foreground: 'colorHighlight'
+  background: 'colorBackgroundDarkTwo'
   description: 'IncSearch highlighting, also used for the text replaced with :s///c'
 Question:
-  foreground: 'cyan'
+  foreground: 'colorHighlight'
   description: 'Hit-enter prompt and yes/no questions'
 StatusLine:
-  foreground: 'cyan'
-  background: 'bgTwo'
+  foreground: 'colorHighlight'
+  background: 'colorBackgroundDarkOne'
   description: 'Status line of current window'
 
 # Constants
 Constant:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Any constant'
 Typedef:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'a typedef'
 Number:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'A number constant: 234, 0xff'
 Float:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'A floating point constant: 2.3e10'
 Boolean:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'A boolean constant: TRUE, false'
 
 # Identifiers
 Identifier:
-  foreground: 'orange'
+  foreground: 'colorIdentifier'
   description: 'Any variable name'
 Function:
-  foreground: 'orange'
+  foreground: 'colorIdentifier'
   description: 'Function name (also: methods for classes)'
 
 # Statements
 Statement:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'Any statement'
 Operator:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'Sizeof", "+", "*", etc.'
 PreCondit:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'Preprocessor #if, #else, #endif, etc.'
 Conditional:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'If, then, else, endif, switch, etc.'
 Repeat:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'For, do, while, etc.'
 Label:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'Case, default, etc.'
 Exception:
-  foreground: 'purple'
+  foreground: 'colorStatement'
   description: 'Try, catch, throw'
 
 # Types
 Type:
-  foreground: 'blue'
+  foreground: 'colorType'
   description: 'Int, long, char, etc.'
 StorageClass:
-  foreground: 'blue'
+  foreground: 'colorType'
   description: 'Static, register, volatile, etc.'
 Structure:
-  foreground: 'blue'
+  foreground: 'colorType'
   description: 'Struct, union, enum, etc.'
 
 # Globals
 Keyword:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Any other keyword'
 PreProc:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Generic Preprocessor'
 Define:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Preprocessor #define'
 Macro:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Same as Define'
 Include:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
   description: 'Preprocessor #include'
 
 # Special
 Special:
-  foreground: 'green'
+  foreground: 'colorSpecial'
   description: 'Any special symbol'
 SpecialKey:
-  foreground: 'green'
+  foreground: 'colorSpecial'
   description: 'Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, listchars. generally: text that is displayed differently from what it really is.'
 
 # Trivial
 Comment:
-  foreground: 'textDarkOne'
+  foreground: 'colorTextDarkThree'
   description: 'Any comment'
 SpecialComment:
-  foreground: 'textDarkOne'
+  foreground: 'colorTextDarkThree'
   description: 'Special things inside a comment'
 StatusLineNC:
-  foreground: 'textDarkOne'
+  foreground: 'colorTextDarkThree'
   description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
 NonText:
-  foreground: 'textDarkOne'
+  foreground: 'colorTextDarkThree'
   description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 
 # Disable any special highlighting

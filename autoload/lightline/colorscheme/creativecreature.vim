@@ -1,7 +1,7 @@
 " ===============================================================
 " Creative Creatire
 " lightline color theme
-" Author: Victor Conner
+" Author: Charles Victor Conner
 " ===============================================================
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {}}

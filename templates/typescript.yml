@@ -1,14 +1,14 @@
 # Globals
 typescriptGlobal:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 typescriptGlobalObjects:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 typescriptGlobalNodeObjects:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 
 # Identifiers
 typescriptFuncCall:
-  foreground: 'orange'
+  foreground: 'colorIdentifier'
   description: 'This is a custom syntax match that I have in my nvim config'
 
 # Statements
@@ -17,10 +17,10 @@ typescriptFuncCall:
 
 # Reset
 typescriptBraces:
-  foreground: 'textOne'
+  foreground: 'colorText'
 typescriptFuncArg:
-  foreground: 'textOne'
+  foreground: 'colorText'
 
 # Attention
 typescriptExceptions:
-  foreground: 'red'
+  foreground: 'colorAttention'

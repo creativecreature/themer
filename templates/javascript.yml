@@ -1,14 +1,14 @@
 # Globals
 jsImport:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 jsExport:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 # Highlight
 # Statements
 jsForAwait:
-  foreground: 'purple'
+  foreground: 'colorStatement'
 jsAsyncKeyword:
-  foreground: 'purple'
+  foreground: 'colorStatement'
 # Types
 javaScriptVariable:
-  foreground: 'blue'
+  foreground: 'colorType'

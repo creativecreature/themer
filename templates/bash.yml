@@ -1,12 +1,12 @@
 # Globals
 shSet:
-  foreground: 'yellow'
+  foreground: 'colorGlobal'
 # Highlight
 shSetOption:
-  foreground: 'cyan'
+  foreground: 'colorHighlight'
 # Statements
 shStatement:
-  foreground: 'purple'
+  foreground: 'colorStatement'
 # Types
 shFunctionKey:
-  foreground: 'blue'
+  foreground: 'colorType'

@@ -1,96 +1,96 @@
 normal:
   left:
     highlight:
-      foreground: 'bgOne'
-      background: 'pink'
+      foreground: 'colorBackground'
+      background: 'colorDecorate'
     meta:
-      foreground: 'pink'
-      background: 'bgLightOne'
+      foreground: 'colorDecorate'
+      background: 'colorBackgroundLightOne'
   right:
     highlight:
-      foreground: 'bgOne'
-      background: 'pink'
+      foreground: 'colorBackground'
+      background: 'colorDecorate'
     meta:
-      foreground: 'pink'
-      background: 'bgLightOne'
+      foreground: 'colorDecorate'
+      background: 'colorBackgroundLightOne'
   middle:
-    foreground: 'textDarkOne'
-    background: 'bgOne'
+    foreground: 'colorTextDarkThree'
+    background: 'colorBackground'
   warning:
-    foreground: 'bgOne'
-    background: 'yellow'
+    foreground: 'colorBackground'
+    background: 'colorGlobal'
   error:
-    foreground: 'bgOne'
-    background: 'red'
+    foreground: 'colorBackground'
+    background: 'colorAttention'
 insert:
   left:
     highlight:
-      foreground: 'bgOne'
-      background: 'red'
+      foreground: 'colorBackground'
+      background: 'colorAttention'
     meta:
-      foreground: 'red'
-      background: 'bgLightOne'
+      foreground: 'colorAttention'
+      background: 'colorBackgroundLightOne'
   right:
     highlight:
-      foreground: 'bgOne'
-      background: 'red'
+      foreground: 'colorBackground'
+      background: 'colorAttention'
     meta:
-      foreground: 'red'
-      background: 'bgLightOne'
+      foreground: 'colorAttention'
+      background: 'colorBackgroundLightOne'
   middle:
-    foreground: 'textDarkOne'
-    background: 'bgOne'
+    foreground: 'colorTextDarkThree'
+    background: 'colorBackground'
 visual:
   left:
     highlight:
-      foreground: 'bgOne'
-      background: 'cyan'
+      foreground: 'colorBackground'
+      background: 'colorHighlight'
     meta:
-      foreground: 'cyan'
-      background: 'bgLightOne'
+      foreground: 'colorHighlight'
+      background: 'colorBackgroundLightOne'
   right:
     highlight:
-      foreground: 'bgOne'
-      background: 'cyan'
+      foreground: 'colorBackground'
+      background: 'colorHighlight'
     meta:
-      foreground: 'cyan'
-      background: 'bgLightOne'
+      foreground: 'colorHighlight'
+      background: 'colorBackgroundLightOne'
   middle:
-    foreground: 'textDarkOne'
-    background: 'bgOne'
+    foreground: 'colorTextDarkThree'
+    background: 'colorBackground'
 replace:
   left:
     highlight:
-      foreground: 'bgOne'
-      background: 'green'
+      foreground: 'colorBackground'
+      background: 'colorSpecial'
     meta:
-      foreground: 'green'
-      background: 'bgLightOne'
+      foreground: 'colorSpecial'
+      background: 'colorBackgroundLightOne'
   right:
     highlight:
-      foreground: 'bgOne'
-      background: 'green'
+      foreground: 'colorBackground'
+      background: 'colorSpecial'
     meta:
-      foreground: 'green'
-      background: 'bgLightOne'
+      foreground: 'colorSpecial'
+      background: 'colorBackgroundLightOne'
   middle:
-    foreground: 'textDarkOne'
-    background: 'bgOne'
+    foreground: 'colorTextDarkThree'
+    background: 'colorBackground'
 inactive:
   left:
     highlight:
-      foreground: 'bgOne'
-      background: 'bgLightOne'
+      foreground: 'colorBackground'
+      background: 'colorBackgroundLightOne'
     meta:
-      foreground: 'bgOne'
-      background: 'bgLightOne'
+      foreground: 'colorBackground'
+      background: 'colorBackgroundLightOne'
   right:
     highlight:
-      foreground: 'bgOne'
-      background: 'bgLightOne'
+      foreground: 'colorBackground'
+      background: 'colorBackgroundLightOne'
     meta:
-      foreground: 'bgOne'
-      background: 'bgLightOne'
+      foreground: 'colorBackground'
+      background: 'colorBackgroundLightOne'
   middle:
-    foreground: 'bgOne'
-    background: 'bgLightOne'
+    foreground: 'colorBackground'
+    background: 'colorBackgroundLightOne'
