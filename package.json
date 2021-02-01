@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CharlesConner/zeilo.git"
+    "url": "git+https://github.com/creativecreature/themer.git"
   },
   "author": "Charles Victor Conner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CharlesConner/zeilo/issues"
+    "url": "https://github.com/creativecreature/themer/issues"
   },
-  "homepage": "https://github.com/CharlesConner/zeilo#readme",
+  "homepage": "https://github.com/creativecreature/themer#readme",
   "dependencies": {
     "hsl-to-hex": "^1.0.0",
     "rimraf": "^3.0.2",
