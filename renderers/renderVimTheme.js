@@ -5,7 +5,7 @@ const NEW_LINE = '\n'
 const header = `\
 " ===============================================================
 " Creative Creature
-" A vim color theme
+" VIM Color Theme
 " Author: Victor Conner
 " ===============================================================
 `

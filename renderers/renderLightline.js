@@ -3,7 +3,7 @@ const fs = require('fs')
 const header = `\
 " ===============================================================
 " Creative Creatire
-" lightline color theme
+" Lightline Color Theme
 " Author: Charles Victor Conner
 " ===============================================================
 `
