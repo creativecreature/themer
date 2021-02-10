@@ -46,11 +46,17 @@ VertSplit:
   foreground: 'colorBackground'
   description: 'The column separating vertically split windows'
 TabLine:
-  foreground: 'colorTextDarkTwo'
+  foreground: 'colorTextDarkThree'
+  background: 'colorBackgroundDarkOne'
   description: 'Tab pages line, not active tab page label'
 TabLineSel:
   foreground: 'colorText'
+  background: 'colorBackgroundDarkOne'
   description: 'Tab pages line, active tab page label'
+TabLineFill:
+  foreground: 'colorText'
+  background: 'colorBackgroundDarkOne'
+  description: 'Tab pages line, where there are no labels'
 Title:
   foreground: 'colorSpecial'
   description: 'Titles for output from ":set all", ":autocmd" etc.'
@@ -261,5 +267,3 @@ ModeMsg:
   description: 'Showmode message, e.g -- INSERT --'
 SpecialChar:
   description: 'Special character in a constant'
-TabLineFill:
-  description: 'Tab pages line, where there are no labels'

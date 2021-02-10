@@ -25,8 +25,9 @@ hi PmenuSel guifg=#d4d7e2 guibg=#454b63 gui=NONE cterm=NONE
 hi ColorColumn guifg=NONE guibg=#c8cbda gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE guibg=#c8cbda gui=NONE cterm=NONE
 hi VertSplit guifg=#292d3d guibg=NONE gui=NONE cterm=NONE
-hi TabLine guifg=#c8cbda guibg=NONE gui=NONE cterm=NONE
-hi TabLineSel guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
+hi TabLine guifg=#5a6287 guibg=#252837 gui=NONE cterm=NONE
+hi TabLineSel guifg=#d4d7e2 guibg=#252837 gui=NONE cterm=NONE
+hi TabLineFill guifg=#d4d7e2 guibg=#252837 gui=NONE cterm=NONE
 hi Title guifg=#c3e88d guibg=NONE gui=NONE cterm=NONE
 hi Directory guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#5a6287 guibg=#252837 gui=NONE cterm=NONE
@@ -90,7 +91,6 @@ hi Foldcolumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SpecialChar guifg=NONE guibg=NONE gui=NONE cterm=NONE
-hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 
 "" BASH
 hi shSet guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
