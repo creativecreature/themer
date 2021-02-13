@@ -4,7 +4,7 @@ const header = `\
 " ===============================================================
 " Creative Creatire
 " Lightline Color Theme
-" Author: Charles Victor Conner
+" Author: Victor Conner
 " ===============================================================
 `
 
