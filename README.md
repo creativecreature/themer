@@ -1,6 +1,6 @@
 # Themer
 Themer is a project I've created for generating my color themes. It turns
-*yaml* templates into syntax files.
+generic *yaml* templates into syntax files.
 
 ## Requirements
 - node
