@@ -5,6 +5,10 @@
   "license": "ISC",
   "description": "vim-theme renderer",
   "main": "index.js",
+  "volta": {
+    "node": "14.15.5",
+    "yarn": "1.22.10"
+  },
   "scripts": {
     "prerender": "rimraf colors autoload",
     "render": "node index.js"
