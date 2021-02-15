@@ -1,0 +1,19 @@
+statusLeft:
+  foreground: 'colorIdentifier'
+  background: 'colorBackgroundDarkOne'
+statsCPU:
+  foreground: 'colorStatement'
+  background: 'colorBackgroundDarkOne'
+statsMem:
+  foreground: 'colorType'
+  background: 'colorBackgroundDarkOne'
+statsText:
+  foreground: 'colorBackgroundDarkOne'
+yyMmDd:
+  foreground: 'colorIdentifier'
+  background: 'colorBackgroundDarkOne'
+hM:
+  foreground: 'colorGlobal'
+  background: 'colorBackgroundDarkOne'
+statusFormatArrow:
+  foreground: 'colorBackgroundDarkOne'
