@@ -3,7 +3,6 @@ jsImport:
   foreground: 'colorGlobal'
 jsExport:
   foreground: 'colorGlobal'
-# Highlight
 # Statements
 jsForAwait:
   foreground: 'colorStatement'
@@ -12,3 +11,6 @@ jsAsyncKeyword:
 # Types
 javaScriptVariable:
   foreground: 'colorType'
+# Decorate
+jsxTagName:
+  foreground: 'colorDecorate'

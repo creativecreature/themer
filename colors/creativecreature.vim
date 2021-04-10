@@ -104,6 +104,7 @@ hi jsExport guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi jsForAwait guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi jsAsyncKeyword guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi javaScriptVariable guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
+hi jsxTagName guifg=#dc8fbe guibg=NONE gui=NONE cterm=NONE
 
 "" TYPESCRIPT
 hi typescriptGlobal guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
