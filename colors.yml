@@ -9,7 +9,7 @@ colorBackgroundDarkTwo: 'hsl(229, 20%, 16%)'
 colorText: 'hsl(229, 20%, 86%)'
 colorTextDarkOne: 'hsl(229, 20%, 84%)'
 colorTextDarkTwo: 'hsl(229, 20%, 82%)'
-colorTextDarkThree: 'hsl(229, 20%, 74%)'
+colorTextDarkThree: 'hsl(229, 20%, 70%)'
 colorTextDarkFour: 'hsl(229, 20%, 44%)'
 
 # General colors to draw attention

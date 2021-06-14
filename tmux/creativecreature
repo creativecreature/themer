@@ -17,8 +17,8 @@ set -g window-status-format "#[fg=##252837,bg=#33384d,nobold,noitalics,noundersc
 set -g window-status-separator ""
 set -g monitor-activity off
 
-setw -g window-active-style "fg=#afb4ca,bg=#292d3d"
-setw -g window-style "fg=#afb4ca,bg=#252837"
+setw -g window-active-style "fg=#a3a9c2,bg=#292d3d"
+setw -g window-style "fg=#a3a9c2,bg=#252837"
 
 setw -g pane-active-border-style "fg=#252837,bg=#252837"
 setw -g pane-border-style "fg=#252837,bg=#252837"
