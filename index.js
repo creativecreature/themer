@@ -1,16 +1,16 @@
 const fs = require('fs')
 const yaml = require('yaml')
-const transformSyntaxTemplate = require('./transformers/transformSyntaxTemplate')
-const transformLightlineTemplate = require('./transformers/transformLightlineTemplate')
-const renderVimTheme = require('./renderers/renderVimTheme')
-const renderLightline = require('./renderers/renderLightline')
+const transformSyntaxTemplate = require('./src/transformers/transformSyntaxTemplate')
+const transformLightlineTemplate = require('./src/transformers/transformLightlineTemplate')
+const renderVimTheme = require('./src/renderers/renderVimTheme')
+const renderLightline = require('./src/renderers/renderLightline')
 
 // == TEMPLATES ================================================================
-const generalTemplate = yaml.parse(fs.readFileSync('./templates/general.yml', 'utf-8'))
-const bashTemplate = yaml.parse(fs.readFileSync('./templates/bash.yml', 'utf-8'))
-const javascriptTemplate = yaml.parse(fs.readFileSync('./templates/javascript.yml', 'utf-8'))
-const typescriptTemplate = yaml.parse(fs.readFileSync('./templates/typescript.yml', 'utf-8'))
-const lightlineTemplate = yaml.parse(fs.readFileSync('./templates/lightline.yml', 'utf-8'))
+const generalTemplate = yaml.parse(fs.readFileSync('./src/templates/general.yml', 'utf-8'))
+const bashTemplate = yaml.parse(fs.readFileSync('./src/templates/bash.yml', 'utf-8'))
+const javascriptTemplate = yaml.parse(fs.readFileSync('./src/templates/javascript.yml', 'utf-8'))
+const typescriptTemplate = yaml.parse(fs.readFileSync('./src/templates/typescript.yml', 'utf-8'))
+const lightlineTemplate = yaml.parse(fs.readFileSync('./src/templates/lightline.yml', 'utf-8'))
 
 // == TRANSFORM ================================================================
 const syntaxSections = {
