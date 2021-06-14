@@ -10,7 +10,7 @@
     "yarn": "1.22.10"
   },
   "scripts": {
-    "prerender": "rimraf colors autoload",
+    "prerender": "rimraf colors autoload tmux",
     "render": "node index.js"
   },
   "repository": {

@@ -17,7 +17,7 @@ String:
 
 # UI
 LineNr:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   description: 'Line number for ":number" and ":#" commands, and when number or relativenumber option is set.'
 WildMenu:
   foreground: 'colorText'
@@ -46,7 +46,7 @@ VertSplit:
   foreground: 'colorBackground'
   description: 'The column separating vertically split windows'
 TabLine:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   background: 'colorBackgroundDarkOne'
   description: 'Tab pages line, not active tab page label'
 TabLineSel:
@@ -64,7 +64,7 @@ Directory:
   foreground: 'colorIdentifier'
   description: 'Directory names (and other special names in listings)'
 Folded:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   background: 'colorBackgroundDarkOne'
   description: 'Line used closed folds'
 CursorLine:
@@ -234,16 +234,16 @@ SpecialKey:
 
 # Trivial
 Comment:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   description: 'Any comment'
 SpecialComment:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   description: 'Special things inside a comment'
 StatusLineNC:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   description: 'Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.'
 NonText:
-  foreground: 'colorTextDarkThree'
+  foreground: 'colorTextDarkFour'
   description: '~ and @ at the end of the window, characters from showbreak and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesnt fit at the end of the line).'
 
 # Disable any special highlighting

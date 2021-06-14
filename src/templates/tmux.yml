@@ -1,19 +1,64 @@
+# ====  Status left (shows the current session) ================================
 statusLeft:
   foreground: 'colorIdentifier'
   background: 'colorBackgroundDarkOne'
-statsCPU:
-  foreground: 'colorStatement'
-  background: 'colorBackgroundDarkOne'
-statsMem:
-  foreground: 'colorType'
-  background: 'colorBackgroundDarkOne'
-statsText:
-  foreground: 'colorBackgroundDarkOne'
-yyMmDd:
+statusLeftArrow:
   foreground: 'colorIdentifier'
   background: 'colorBackgroundDarkOne'
-hM:
-  foreground: 'colorGlobal'
-  background: 'colorBackgroundDarkOne'
-statusFormatArrow:
+
+# ====  Status right (shows cpu, memory, date, time) ===========================
+statsCPU:
   foreground: 'colorBackgroundDarkOne'
+  background: 'colorStatement'
+statsCPULow:
+  foreground: 'colorAttention'
+statsMem:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorType'
+statsMemLow:
+  foreground: 'colorAttention'
+statsText:
+  foreground: 'colorBackgroundDarkOne'
+date:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorIdentifier'
+time:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorGlobal'
+
+# ====  Status for the small bars that show the running process ================
+currentStatusBarPrefixArrow:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundLightTwo'
+currentStatusBarText:
+  foreground: 'colorText'
+  background: 'colorBackgroundLightTwo'
+currentStatusBarSuffixArrow:
+  foreground: 'colorBackgroundLightTwo'
+  background: 'colorBackgroundDarkOne'
+inactiveStatusBarPrefixArrow:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundLightOne'
+inactiveStatusBarText:
+  foreground: 'colorTextDarkTwo'
+  background: 'colorBackgroundLightOne'
+inactiveStatusBarSuffixArrow:
+  foreground: 'colorBackgroundLightOne'
+  background: 'colorBackgroundDarkOne'
+
+# === Windows ==================================================================
+activeWindow:
+  foreground: 'colorTextDarkThree'
+  background: 'colorBackground'
+inactiveWindow:
+  foreground: 'colorTextDarkThree'
+  background: 'colorBackgroundDarkOne'
+
+# === Borders ==================================================================
+borders:
+  foreground: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundDarkOne'
+
+# === Status bar ===============================================================
+status:
+  background: 'colorBackgroundDarkOne'
