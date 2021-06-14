@@ -10,9 +10,8 @@ const lightlineTemplate = yaml.parse(fs.readFileSync('./src/templates/lightline.
 const tmuxTemplate = yaml.parse(fs.readFileSync('./src/templates/tmux.yml', 'utf-8'))
 
 // == TRANSFORMERS =============================================================
+const transformColorKeys = require('./src/transformers/transformColorKeys')
 const transformSyntaxTemplate = require('./src/transformers/transformSyntaxTemplate')
-const transformLightlineTemplate = require('./src/transformers/transformLightlineTemplate')
-const transformTmuxTemplate = require('./src/transformers/transformTmuxTemplate')
 
 // == RENDERERS =============================================================
 const renderVimTheme = require('./src/renderers/renderVimTheme')
@@ -26,8 +25,8 @@ const syntaxSections = {
   javascript: transformSyntaxTemplate(javascriptTemplate),
   typescript: transformSyntaxTemplate(typescriptTemplate),
 }
-const lightline = transformLightlineTemplate(lightlineTemplate)
-const tmux = transformTmuxTemplate(tmuxTemplate)
+const lightline = transformColorKeys(lightlineTemplate)
+const tmux = transformColorKeys(tmuxTemplate)
 
 // == RENDER  ==================================================================
 renderVimTheme(syntaxSections)
