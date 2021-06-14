@@ -40,7 +40,7 @@ inactiveStatusBarPrefixArrow:
   foreground: 'colorBackgroundDarkOne'
   background: 'colorBackgroundLightOne'
 inactiveStatusBarText:
-  foreground: 'colorTextDarkTwo'
+  foreground: 'colorTextDarkFour'
   background: 'colorBackgroundLightOne'
 inactiveStatusBarSuffixArrow:
   foreground: 'colorBackgroundLightOne'
