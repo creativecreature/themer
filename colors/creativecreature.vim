@@ -46,6 +46,7 @@ hi DiffText guifg=#ffcb6b guibg=#212431 gui=NONE cterm=NONE
 hi Todo guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#8adeff guibg=NONE gui=underline cterm=NONE
 hi Character guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
+hi TSCharacter guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
 hi CursorLineNr guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Visual guifg=#d4d7e2 guibg=#8adeff gui=NONE cterm=NONE
 hi VisualNOS guifg=NONE guibg=#8adeff gui=NONE cterm=NONE
@@ -58,7 +59,8 @@ hi Typedef guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Number guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Float guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi Identifier guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
+hi TSBoolean guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
+hi Identifier guifg=#ff8599 guibg=NONE gui=NONE cterm=NONE
 hi Function guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
@@ -70,14 +72,15 @@ hi Exception guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi Type guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 hi StorageClass guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
 hi Structure guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
-hi Keyword guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
+hi Keyword guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Define guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
 hi Include guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi Special guifg=#c3e88d guibg=NONE gui=NONE cterm=NONE
+hi Special guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
 hi SpecialKey guifg=#c3e88d guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
+hi TSComment guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
 hi SpecialComment guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
 hi StatusLineNC guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
 hi NonText guifg=#5a6287 guibg=NONE gui=NONE cterm=NONE
@@ -91,26 +94,3 @@ hi Foldcolumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi SpecialChar guifg=NONE guibg=NONE gui=NONE cterm=NONE
-
-"" BASH
-hi shSet guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi shSetOption guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
-hi shStatement guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
-hi shFunctionKey guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
-
-"" JAVASCRIPT
-hi jsImport guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi jsExport guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi jsForAwait guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
-hi jsAsyncKeyword guifg=#c797e7 guibg=NONE gui=NONE cterm=NONE
-hi javaScriptVariable guifg=#929ddd guibg=NONE gui=NONE cterm=NONE
-hi jsxTagName guifg=#dc8fbe guibg=NONE gui=NONE cterm=NONE
-
-"" TYPESCRIPT
-hi typescriptGlobal guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi typescriptGlobalObjects guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi typescriptGlobalNodeObjects guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE
-hi typescriptFuncCall guifg=#f78e6e guibg=NONE gui=NONE cterm=NONE
-hi typescriptBraces guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
-hi typescriptFuncArg guifg=#d4d7e2 guibg=NONE gui=NONE cterm=NONE
-hi typescriptExceptions guifg=#ff8599 guibg=NONE gui=NONE cterm=NONE

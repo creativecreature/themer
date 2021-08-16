@@ -123,6 +123,9 @@ MatchParen:
 Character:
   foreground: 'colorHighlight'
   description: 'a character constant: c, \n, etc'
+TSCharacter:
+  foreground: 'colorHighlight'
+  description: 'for characters'
 CursorLineNr:
   description: 'Like LineNr when cursorline or relativenumber is set for the cursor line'
 Visual:
@@ -164,10 +167,12 @@ Float:
 Boolean:
   foreground: 'colorGlobal'
   description: 'A boolean constant: TRUE, false'
-
+TSBoolean :
+  foreground: 'colorGlobal'
+  description: 'A boolean constant: TRUE, false'
 # Identifiers
 Identifier:
-  foreground: 'colorIdentifier'
+  foreground: 'colorAttention'
   description: 'Any variable name'
 Function:
   foreground: 'colorIdentifier'
@@ -209,7 +214,7 @@ Structure:
 
 # Globals
 Keyword:
-  foreground: 'colorGlobal'
+  foreground: 'colorStatement'
   description: 'Any other keyword'
 PreProc:
   foreground: 'colorGlobal'
@@ -226,7 +231,7 @@ Include:
 
 # Special
 Special:
-  foreground: 'colorSpecial'
+  foreground: 'colorText'
   description: 'Any special symbol'
 SpecialKey:
   foreground: 'colorSpecial'
@@ -236,6 +241,9 @@ SpecialKey:
 Comment:
   foreground: 'colorTextDarkFour'
   description: 'Any comment'
+TSComment:
+  foreground: 'colorTextDarkFour'
+  description: 'For comment blocks'
 SpecialComment:
   foreground: 'colorTextDarkFour'
   description: 'Special things inside a comment'
