@@ -50,8 +50,8 @@ hi TSCharacter guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
 hi CursorLineNr guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Visual guifg=#d4d7e2 guibg=#8adeff gui=NONE cterm=NONE
 hi VisualNOS guifg=NONE guibg=#8adeff gui=NONE cterm=NONE
-hi Search guifg=#d4d7e2 guibg=#8adeff gui=NONE cterm=NONE
-hi IncSearch guifg=#8adeff guibg=#212431 gui=NONE cterm=NONE
+hi Search guifg=#212431 guibg=#d4d7e2 gui=NONE cterm=NONE
+hi IncSearch guifg=#212431 guibg=#d4d7e2 gui=NONE cterm=NONE
 hi Question guifg=#8adeff guibg=NONE gui=NONE cterm=NONE
 hi StatusLine guifg=#8adeff guibg=#252837 gui=NONE cterm=NONE
 hi Constant guifg=#ffcb6b guibg=NONE gui=NONE cterm=NONE

@@ -136,12 +136,12 @@ VisualNOS:
   background: 'colorHighlight'
   description: 'Visual mode selection when vim is not owing the selection. Only supported by gui X11 and xterm-clipboard'
 Search:
-  foreground: 'colorText'
-  background: 'colorHighlight'
+  foreground: 'colorBackgroundDarkTwo'
+  background: 'colorText'
   description: 'Last search pattern highlighting. Also used for highlighting the current line in the quickfix window'
 IncSearch:
-  foreground: 'colorHighlight'
-  background: 'colorBackgroundDarkTwo'
+  foreground: 'colorBackgroundDarkTwo'
+  background: 'colorText'
   description: 'IncSearch highlighting, also used for the text replaced with :s///c'
 Question:
   foreground: 'colorHighlight'
