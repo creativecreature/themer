@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const createArrow = (foreground, background, direction) =>
-  `#[fg=#${foreground},bg=${background},nobold,noitalics,nounderscore]${direction === 'left' ? '' : ''}`
+  `#[fg=#${foreground},bg=${background},nobold,noitalics,nounderscore]${direction === 'left' ? '' : ''}`
 
 const renderStatus = ({ status }) => `\
 set -g status-bg "${status.background}"
@@ -20,15 +20,15 @@ const renderStatusRight = ({ statsCPU, statsCPULow, statsMem, statsMemLow, date,
 CPU_PREFIX=${createArrow(statsCPU.background, statsCPU.foreground, 'left')}
 STATS_CPU="$CPU_PREFIX#[fg=${statsCPU.foreground},bg=${statsCPU.background}]#{sysstat_cpu}"
 set -g @sysstat_cpu_color_low "${statsCPULow.foreground}"
-set -g @sysstat_cpu_view_tmpl ' #[fg=${statsCPU.foreground},nobold]#{cpu.pused} '
+set -g @sysstat_cpu_view_tmpl ' #[fg=${statsCPU.foreground},nobold]#{cpu.pused} '
 
 MEM_PREFIX=${createArrow(statsMem.background, statsMem.foreground, 'left')}
 STATS_MEM="$MEM_PREFIX#[fg=${statsMem.foreground},bg=${statsMem.background}]#{sysstat_mem}"
 set -g @sysstat_mem_color_low "${statsMemLow.foreground}"
-set -g @sysstat_mem_view_tmpl ' #[fg=${statsMem.foreground},nobold]#{mem.used} / #[fg=${statsMem.foreground},nobold]#{mem.total} '
+set -g @sysstat_mem_view_tmpl ' #[fg=${statsMem.foreground},nobold]#{mem.used} / #[fg=${statsMem.foreground},nobold]#{mem.total} '
 
 DATE_PREFIX=${createArrow(date.background, date.foreground, 'left')}
-YY_MM_DD="$DATE_PREFIX#[fg=${date.foreground},bg=${date.background}] %Y-%m-%d "
+YY_MM_DD="$DATE_PREFIX#[fg=${date.foreground},bg=${date.background}] %Y-%m-%d "
 
 TIME_PREFIX=${createArrow(time.background, time.foreground, 'left')}
 H_M="$TIME_PREFIX#[fg=${time.foreground},bg=${time.background}] %H:%M "
