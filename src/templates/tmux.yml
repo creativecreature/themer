@@ -28,8 +28,8 @@ time:
 
 # ====  Status for the small bars that show the running process ================
 currentStatusBarPrefixArrow:
-  foreground: 'colorBackgroundDarkOne'
-  background: 'colorBackgroundLightTwo'
+  foreground: 'colorBackgroundLightTwo'
+  background: 'colorBackgroundDarkOne'
 currentStatusBarText:
   foreground: 'colorText'
   background: 'colorBackgroundLightTwo'
@@ -37,8 +37,8 @@ currentStatusBarSuffixArrow:
   foreground: 'colorBackgroundLightTwo'
   background: 'colorBackgroundDarkOne'
 inactiveStatusBarPrefixArrow:
-  foreground: 'colorBackgroundDarkOne'
-  background: 'colorBackgroundLightOne'
+  foreground: 'colorBackgroundLightOne'
+  background: 'colorBackgroundDarkOne'
 inactiveStatusBarText:
   foreground: 'colorTextDarkFour'
   background: 'colorBackgroundLightOne'
