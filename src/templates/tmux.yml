@@ -1,64 +1,64 @@
 # ====  Status left (shows the current session) ================================
 statusLeft:
   foreground: 'colorIdentifier'
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
 statusLeftArrow:
   foreground: 'colorIdentifier'
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
 
 # ====  Status right (shows cpu, memory, date, time) ===========================
 statsCPU:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorStatement'
 statsCPULow:
   foreground: 'colorAttention'
 statsMem:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorType'
 statsMemLow:
   foreground: 'colorAttention'
 statsText:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
 date:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorIdentifier'
 time:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorGlobal'
 
 # ====  Status for the small bars that show the running process ================
 currentStatusBarPrefixArrow:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorBackgroundLightTwo'
 currentStatusBarText:
   foreground: 'colorText'
   background: 'colorBackgroundLightTwo'
 currentStatusBarSuffixArrow:
   foreground: 'colorBackgroundLightTwo'
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
 inactiveStatusBarPrefixArrow:
-  foreground: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
   background: 'colorBackgroundLightOne'
 inactiveStatusBarText:
   foreground: 'colorTextDarkFour'
   background: 'colorBackgroundLightOne'
 inactiveStatusBarSuffixArrow:
   foreground: 'colorBackgroundLightOne'
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
 
 # === Windows ==================================================================
 activeWindow:
   foreground: 'colorTextDarkThree'
-  background: 'colorBackground'
+  background: 'colorBackgroundTmux'
 inactiveWindow:
   foreground: 'colorTextDarkThree'
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
 
 # === Borders ==================================================================
 borders:
-  foreground: 'colorBackgroundDarkOne'
-  background: 'colorBackgroundDarkOne'
+  foreground: 'colorBackgroundTmuxDark'
+  background: 'colorBackgroundTmuxDark'
 
 # === Status bar ===============================================================
 status:
-  background: 'colorBackgroundDarkOne'
+  background: 'colorBackgroundTmuxDark'
