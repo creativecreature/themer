@@ -3,11 +3,11 @@ set -g status-style "bg=#1e2233"
 set -g status-left-length 50
 set -g status-right-length 150
 
-STATUS_LEFT_SUFFIX=#[fg=##f78e6e,bg=#1e2233,nobold,noitalics,nounderscore]
-set -g status-left "#[fg=#252837,bg=#f78e6e,nobold] #S $STATUS_LEFT_SUFFIX"
+STATUS_LEFT_SUFFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
+set -g status-left "#[fg=#1e2233,bg=#78a0f7,nobold] #S $STATUS_LEFT_SUFFIX"
 
-CPU_PREFIX=#[fg=##c797e7,bg=#1e2233,nobold,noitalics,nounderscore]
-STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#c797e7]#{sysstat_cpu}"
+CPU_PREFIX=#[fg=##bc9cf7,bg=#1e2233,nobold,noitalics,nounderscore]
+STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#bc9cf7]#{sysstat_cpu}"
 set -g @sysstat_cpu_color_low "#ff8599"
 set -g @sysstat_cpu_view_tmpl ' #[fg=#1e2233,nobold]#{cpu.pused} '
 
@@ -19,18 +19,18 @@ set -g @sysstat_mem_view_tmpl ' #[fg=#1e2233,nobold]#{mem.used} / #[fg=#1e2233,n
 DATE_PREFIX=#[fg=##f78e6e,bg=#1e2233,nobold,noitalics,nounderscore]
 YY_MM_DD="$DATE_PREFIX#[fg=#1e2233,bg=#f78e6e] %Y-%m-%d "
 
-TIME_PREFIX=#[fg=##ffcb6b,bg=#1e2233,nobold,noitalics,nounderscore]
-H_M="$TIME_PREFIX#[fg=#1e2233,bg=#ffcb6b] %H:%M "
+TIME_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
+H_M="$TIME_PREFIX#[fg=#1e2233,bg=#78a0f7] %H:%M "
 set -g status-right "$STATS_CPU$STATS_MEM$YY_MM_DD$H_M"
 
-CURRENT_STATUS_BAR_PREFIX=#[fg=##1e2233,bg=#454b63,nobold,noitalics,nounderscore]
-CURRENT_STATUS_BAR_TEXT="#[fg=#d4d7e2,bg=#454b63]#I  #W #F"
-CURRENT_STATUS_BAR_SUFFIX=#[fg=##454b63,bg=#1e2233,nobold,noitalics,nounderscore]
+CURRENT_STATUS_BAR_PREFIX=#[fg=##1e2233,bg=#3c4362,nobold,noitalics,nounderscore]
+CURRENT_STATUS_BAR_TEXT="#[fg=#d4d7e2,bg=#3c4362](#I) #W"
+CURRENT_STATUS_BAR_SUFFIX=#[fg=##3c4362,bg=#1e2233,nobold,noitalics,nounderscore]
 set -g window-status-current-format "$CURRENT_STATUS_BAR_PREFIX $CURRENT_STATUS_BAR_TEXT $CURRENT_STATUS_BAR_SUFFIX"
 
-INACTIVE_STATUS_BAR_PREFIX=#[fg=##1e2233,bg=#33384d,nobold,noitalics,nounderscore]
-INACTIVE_STATUS_BAR_TEXT="#[fg=#5a6287,bg=#33384d ]#I  #W #F"
-INACTIVE_STATUS_BAR_SUFFIX=#[fg=##33384d,bg=#1e2233,nobold,noitalics,nounderscore]
+INACTIVE_STATUS_BAR_PREFIX=#[fg=##1e2233,bg=#31374e,nobold,noitalics,nounderscore]
+INACTIVE_STATUS_BAR_TEXT="#[fg=#5a6287,bg=#31374e ](#I) #W"
+INACTIVE_STATUS_BAR_SUFFIX=#[fg=##31374e,bg=#1e2233,nobold,noitalics,nounderscore]
 set -g window-status-format "$INACTIVE_STATUS_BAR_PREFIX $INACTIVE_STATUS_BAR_TEXT $INACTIVE_STATUS_BAR_SUFFIX"
 set -g window-status-separator ""
 set -g monitor-activity off

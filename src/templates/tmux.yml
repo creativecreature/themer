@@ -1,15 +1,15 @@
 # ====  Status left (shows the current session) ================================
 statusLeft:
-  foreground: 'colorIdentifier'
-  background: 'colorBackgroundTmuxDark'
+  foreground: 'colorBackgroundTmuxDark'
+  background: 'colorTmuxBlue'
 statusLeftArrow:
-  foreground: 'colorIdentifier'
+  foreground: 'colorTmuxBlue'
   background: 'colorBackgroundTmuxDark'
 
 # ====  Status right (shows cpu, memory, date, time) ===========================
 statsCPU:
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorStatement'
+  background: 'colorTmuxCpu'
 statsCPULow:
   foreground: 'colorAttention'
 statsMem:
@@ -23,27 +23,27 @@ date:
   foreground: 'colorBackgroundTmuxDark'
   background: 'colorIdentifier'
 time:
+  background: 'colorTmuxTime'
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorGlobal'
 
 # ====  Status for the small bars that show the running process ================
 currentStatusBarPrefixArrow:
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorBackgroundLightTwo'
+  background: 'colorBackgroundTmuxActive'
 currentStatusBarText:
   foreground: 'colorText'
-  background: 'colorBackgroundLightTwo'
+  background: 'colorBackgroundTmuxActive'
 currentStatusBarSuffixArrow:
-  foreground: 'colorBackgroundLightTwo'
+  foreground: 'colorBackgroundTmuxActive'
   background: 'colorBackgroundTmuxDark'
 inactiveStatusBarPrefixArrow:
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorBackgroundLightOne'
+  background: 'colorBackgroundTmuxInactive'
 inactiveStatusBarText:
   foreground: 'colorTextDarkFour'
-  background: 'colorBackgroundLightOne'
+  background: 'colorBackgroundTmuxInactive'
 inactiveStatusBarSuffixArrow:
-  foreground: 'colorBackgroundLightOne'
+  foreground: 'colorBackgroundTmuxInactive'
   background: 'colorBackgroundTmuxDark'
 
 # === Windows ==================================================================

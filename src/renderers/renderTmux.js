@@ -10,9 +10,9 @@ set -g status-left-length 50
 set -g status-right-length 150
 `
 
-const renderStatusLeft = ({ statusLeftArrow }) => `\
+const renderStatusLeft = ({ statusLeft, statusLeftArrow }) => `\
 STATUS_LEFT_SUFFIX=${createArrow(statusLeftArrow.foreground, statusLeftArrow.background, 'right')}
-set -g status-left "#[fg=#252837,bg=#f78e6e,nobold] #S $STATUS_LEFT_SUFFIX"
+set -g status-left "#[fg=${statusLeft.foreground},bg=${statusLeft.background},nobold] #S $STATUS_LEFT_SUFFIX"
 `
 
 // The stats will have a prefix arrow with inversed colors
@@ -37,14 +37,14 @@ set -g status-right "$STATS_CPU$STATS_MEM$YY_MM_DD$H_M"
 
 const renderCurrentStatusbar = ({ currentStatusBarPrefixArrow, currentStatusBarText, currentStatusBarSuffixArrow }) => `\
 CURRENT_STATUS_BAR_PREFIX=${createArrow(currentStatusBarPrefixArrow.foreground, currentStatusBarPrefixArrow.background, 'right')}
-CURRENT_STATUS_BAR_TEXT="#[fg=${currentStatusBarText.foreground},bg=${currentStatusBarText.background}]#I  #W #F"
+CURRENT_STATUS_BAR_TEXT="#[fg=${currentStatusBarText.foreground},bg=${currentStatusBarText.background}](#I) #W"
 CURRENT_STATUS_BAR_SUFFIX=${createArrow(currentStatusBarSuffixArrow.foreground, currentStatusBarSuffixArrow.background, 'right')}
 set -g window-status-current-format "$CURRENT_STATUS_BAR_PREFIX $CURRENT_STATUS_BAR_TEXT $CURRENT_STATUS_BAR_SUFFIX"
 `
 
 const renderInactiveStatusbar = ({ inactiveStatusBarPrefixArrow, inactiveStatusBarText, inactiveStatusBarSuffixArrow }) => `\
 INACTIVE_STATUS_BAR_PREFIX=${createArrow(inactiveStatusBarPrefixArrow.foreground, inactiveStatusBarPrefixArrow.background, 'right')}
-INACTIVE_STATUS_BAR_TEXT="#[fg=${inactiveStatusBarText.foreground},bg=${inactiveStatusBarText.background} ]#I  #W #F"
+INACTIVE_STATUS_BAR_TEXT="#[fg=${inactiveStatusBarText.foreground},bg=${inactiveStatusBarText.background} ](#I) #W"
 INACTIVE_STATUS_BAR_SUFFIX=${createArrow(inactiveStatusBarSuffixArrow.foreground, inactiveStatusBarSuffixArrow.background, 'right')}
 set -g window-status-format "$INACTIVE_STATUS_BAR_PREFIX $INACTIVE_STATUS_BAR_TEXT $INACTIVE_STATUS_BAR_SUFFIX"
 set -g window-status-separator ""

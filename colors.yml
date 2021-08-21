@@ -5,8 +5,15 @@ colorBackground: 'hsl(229, 20%, 20%)'
 colorBackgroundDarkOne: 'hsl(229, 20%, 18%)'
 colorBackgroundDarkTwo: 'hsl(229, 20%, 16%)'
 
+# TMUX colors
 colorBackgroundTmux: 'hsl(230, 24%, 19%)'
 colorBackgroundTmuxDark: 'hsl(229, 26%, 16%)'
+colorBackgroundTmuxActive: 'hsl(229, 24%, 31%)'
+colorBackgroundTmuxInactive: 'hsl(228, 23%, 25%)'
+colorTmuxBlue: 'hsl(221, 89%, 72%)'
+colorTmuxActiveProcess: 'hsl(89, 51%, 61%)'
+colorTmuxTime: 'hsl(221, 89%, 72%)'
+colorTmuxCpu: 'hsl(261, 85%, 79%)'
 
 # Text colors
 colorText: 'hsl(229, 20%, 86%)'
