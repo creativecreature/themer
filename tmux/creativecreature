@@ -9,13 +9,13 @@ set -g status-left "#[fg=#1e2233,bg=#78a0f7,nobold] #S $STATUS_LEFT_SUFFIX"
 CPU_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
 set -g @sysstat_cpu_color_low "#1e2233"
 set -g @sysstat_cpu_view_tmpl "#[fg=#1e2233,nobold]#{cpu.pused} "
-STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#78a0f7] CPU #{sysstat_cpu}"
+STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#78a0f7] cpu #{sysstat_cpu}"
 
 MEM_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
 set -g @sysstat_mem_color_low "#1e2233"
 set -g @sysstat_mem_view_tmpl "#[fg=#1e2233,nobold]#{mem.pused} "
 
-STATS_MEM="$MEM_PREFIX#[fg=#1e2233,bg=#78a0f7] MEM #{sysstat_mem}"
+STATS_MEM="$MEM_PREFIX#[fg=#1e2233,bg=#78a0f7] mem #{sysstat_mem}"
 
 DATE_PREFIX=#[fg=##f78e6e,bg=#1e2233,nobold,noitalics,nounderscore]
 YY_MM_DD="$DATE_PREFIX#[fg=#1e2233,bg=#f78e6e] %Y-%m-%d "

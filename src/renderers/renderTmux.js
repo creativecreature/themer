@@ -20,13 +20,13 @@ const renderStatusRight = ({ statsCPU, statsCPULow, statsMem, statsMemLow, date,
 CPU_PREFIX=${createArrow(statsCPU.background, statsCPU.foreground, 'left')}
 set -g @sysstat_cpu_color_low "${statsCPULow.foreground}"
 set -g @sysstat_cpu_view_tmpl "#[fg=${statsCPU.foreground},nobold]#{cpu.pused} "
-STATS_CPU="$CPU_PREFIX#[fg=${statsCPU.foreground},bg=${statsCPU.background}] CPU #{sysstat_cpu}"
+STATS_CPU="$CPU_PREFIX#[fg=${statsCPU.foreground},bg=${statsCPU.background}] cpu #{sysstat_cpu}"
 
 MEM_PREFIX=${createArrow(statsMem.background, statsMem.foreground, 'left')}
 set -g @sysstat_mem_color_low "${statsMemLow.foreground}"
 set -g @sysstat_mem_view_tmpl "#[fg=${statsMem.foreground},nobold]#{mem.pused} "
 
-STATS_MEM="$MEM_PREFIX#[fg=${statsMem.foreground},bg=${statsMem.background}] MEM #{sysstat_mem}"
+STATS_MEM="$MEM_PREFIX#[fg=${statsMem.foreground},bg=${statsMem.background}] mem #{sysstat_mem}"
 
 DATE_PREFIX=${createArrow(date.background, date.foreground, 'left')}
 YY_MM_DD="$DATE_PREFIX#[fg=${date.foreground},bg=${date.background}] %Y-%m-%d "
