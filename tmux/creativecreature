@@ -6,22 +6,23 @@ set -g status-right-length 150
 STATUS_LEFT_SUFFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
 set -g status-left "#[fg=#1e2233,bg=#78a0f7,nobold] #S $STATUS_LEFT_SUFFIX"
 
-CPU_PREFIX=#[fg=##bc9cf7,bg=#1e2233,nobold,noitalics,nounderscore]
-STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#bc9cf7]#{sysstat_cpu}"
-set -g @sysstat_cpu_color_low "#ff8599"
-set -g @sysstat_cpu_view_tmpl ' #[fg=#1e2233,nobold]#{cpu.pused} '
+CPU_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
+set -g @sysstat_cpu_color_low "#1e2233"
+set -g @sysstat_cpu_view_tmpl "#[fg=#1e2233,nobold]#{cpu.pused} "
+STATS_CPU="$CPU_PREFIX#[fg=#1e2233,bg=#78a0f7] CPU #{sysstat_cpu}"
 
-MEM_PREFIX=#[fg=##929ddd,bg=#1e2233,nobold,noitalics,nounderscore]
-STATS_MEM="$MEM_PREFIX#[fg=#1e2233,bg=#929ddd]#{sysstat_mem}"
-set -g @sysstat_mem_color_low "#ff8599"
-set -g @sysstat_mem_view_tmpl ' #[fg=#1e2233,nobold]#{mem.used} / #[fg=#1e2233,nobold]#{mem.total} '
+MEM_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
+set -g @sysstat_mem_color_low "#1e2233"
+set -g @sysstat_mem_view_tmpl "#[fg=#1e2233,nobold]#{mem.pused} "
+
+STATS_MEM="$MEM_PREFIX#[fg=#1e2233,bg=#78a0f7] MEM #{sysstat_mem}"
 
 DATE_PREFIX=#[fg=##f78e6e,bg=#1e2233,nobold,noitalics,nounderscore]
 YY_MM_DD="$DATE_PREFIX#[fg=#1e2233,bg=#f78e6e] %Y-%m-%d "
 
 TIME_PREFIX=#[fg=##78a0f7,bg=#1e2233,nobold,noitalics,nounderscore]
 H_M="$TIME_PREFIX#[fg=#1e2233,bg=#78a0f7] %H:%M "
-set -g status-right "$STATS_CPU$STATS_MEM$YY_MM_DD$H_M"
+set -g status-right "$STATS_CPU$STATS_MEM"
 
 CURRENT_STATUS_BAR_PREFIX=#[fg=##1e2233,bg=#3c4362,nobold,noitalics,nounderscore]
 CURRENT_STATUS_BAR_TEXT="#[fg=#d4d7e2,bg=#3c4362](#I) #W"

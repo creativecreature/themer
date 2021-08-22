@@ -9,14 +9,16 @@ statusLeftArrow:
 # ====  Status right (shows cpu, memory, date, time) ===========================
 statsCPU:
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorTmuxCpu'
+  background: 'colorTmuxBlue'
 statsCPULow:
-  foreground: 'colorAttention'
+  foreground: 'colorBackgroundTmuxDark'
+  background: 'colorAttention'
 statsMem:
   foreground: 'colorBackgroundTmuxDark'
-  background: 'colorType'
+  background: 'colorTmuxBlue'
 statsMemLow:
-  foreground: 'colorAttention'
+  foreground: 'colorBackgroundTmuxDark'
+  background: 'colorAttention'
 statsText:
   foreground: 'colorBackgroundTmuxDark'
 date:
