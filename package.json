@@ -6,8 +6,8 @@
   "description": "vim-theme renderer",
   "main": "index.js",
   "volta": {
-    "node": "14.15.5",
-    "yarn": "1.22.10"
+    "node": "17.9.1",
+    "yarn": "1.22.18"
   },
   "scripts": {
     "prerender": "rimraf colors autoload tmux",
